@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " et",
+    "iii",
+    "  i"
+  ],
+  "key": {
+    "e": {
+      "item": "mcbbswiki:item_stacked_eee"
+    },
+    "t": {
+      "item": "minecraft:tnt"
+    },
+    "i":{
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:item_sword_eee",
+    "count": 1
+  }
+}

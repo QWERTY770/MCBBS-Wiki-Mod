@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ddd",
+    "ddd",
+    "ddd"
+  ],
+  "key": {
+    "d": {
+      "item": "mcbbswiki:item_eee"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:item_stacked_eee",
+    "count": 1
+  }
+}
