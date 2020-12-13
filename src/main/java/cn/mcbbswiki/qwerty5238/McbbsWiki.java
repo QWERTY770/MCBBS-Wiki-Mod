@@ -6,6 +6,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("mcbbswiki")
 public class McbbsWiki {
+    public static final String id = "mcbbswiki";
     public McbbsWiki(){
         BlockRegistry.BLOCKS.register(
                 FMLJavaModLoadingContext.get().getModEventBus()

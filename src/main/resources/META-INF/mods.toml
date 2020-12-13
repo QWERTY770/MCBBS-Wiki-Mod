@@ -4,7 +4,7 @@ license="GNU General Public License v3.0"
 issueTrackerURL="https://github.com/QWERTY770/MCBBS-Wiki-Mod/issues"
 [[mods]]
 modId="mcbbswiki"
-version="0.2"
+version="0.3"
 displayName="MCBBS Wiki"
 displayURL="https://github.com/QWERTY770/MCBBS-Wiki-Mod"
 logoFile="mcbbswiki.png"
