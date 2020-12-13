@@ -24,6 +24,7 @@ public abstract class ItemRegistry {
     public static RegistryObject<Item> block_aurora = ITEMS.register("block_aurora", () -> new BlockItem(BlockRegistry.block_aurora.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
     public static RegistryObject<Item> block_eminfantry = ITEMS.register("block_eminfantry", () -> new BlockItem(BlockRegistry.block_eminfantry.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
     // 2020/11/25 to 2020/11/26 -- added at 2020/11/26 19:27
+    public static RegistryObject<Item> block_mcbbswiki_ore = ITEMS.register("block_mcbbswiki_ore", () -> new BlockItem(BlockRegistry.block_mcbbswiki_ore.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
 
     public static RegistryObject<Item> item_sword_eee = ITEMS.register("item_sword_eee", ItemSwordEEE::new);
     public static RegistryObject<Item> item_eee = ITEMS.register("item_eee", ItemEEE::new);
