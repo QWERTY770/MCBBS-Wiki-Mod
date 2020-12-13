@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mcbbswiki:block_mcbbswiki_ore"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "boson:survives_explosion"
+        }
+      ]
+    }
+  ]
+}
