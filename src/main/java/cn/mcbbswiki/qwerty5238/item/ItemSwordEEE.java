@@ -8,7 +8,7 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.crafting.Ingredient;
 
 public class ItemSwordEEE extends SwordItem {
-    private static final IItemTier iItemTier = new IItemTier() {
+    private static final IItemTier I_ITEM_TIER = new IItemTier() {
         @Override
         public int getMaxUses() {
             return 1000;
@@ -40,6 +40,6 @@ public class ItemSwordEEE extends SwordItem {
         }
     };
     public ItemSwordEEE() {
-        super(iItemTier, 5, -2F, new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup));
+        super(I_ITEM_TIER, 5, -2F, new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup));
     }
 }

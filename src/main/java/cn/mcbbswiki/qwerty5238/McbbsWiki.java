@@ -4,9 +4,12 @@ import cn.mcbbswiki.qwerty5238.registry.*;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+/**
+ * @author QWERTY_52_38@mcbbs-wiki.cn
+ */
 @Mod("mcbbswiki")
 public class McbbsWiki {
-    public static final String id = "mcbbswiki";
+    public static final String ID = "mcbbswiki";
     public McbbsWiki(){
         BlockRegistry.BLOCKS.register(
                 FMLJavaModLoadingContext.get().getModEventBus()

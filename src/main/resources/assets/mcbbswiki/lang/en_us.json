@@ -1,5 +1,5 @@
 {
-  "group.mcbbswiki.mcbbswiki_group": "MCBBS Wiki",
+  "group.mcbbswiki.mcbbswiki_group": "MCBBS Wiki Group",
   "block.mcbbswiki.block_qwerty5238": "QWERTY_52_38 Block",
 
   "block.mcbbswiki.block_eicy": "Eicy Block",
@@ -16,5 +16,12 @@
 
   "item.mcbbswiki.item_sword_eee": "EEE Sword",
   "item.mcbbswiki.item_eee": "EEE",
-  "item.mcbbswiki.item_stacked_eee": "Stacked EEE"
+  "item.mcbbswiki.item_stacked_eee": "Stacked EEE",
+
+  "block.mcbbswiki.block_mcbbswiki_ore": "MCBBS Wiki Ore",
+  "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki Ingot",
+  "item.mcbbswiki.item_mcbbswiki_helmet_level1": "MCBBS Wiki Helmet (Level1)",
+  "item.mcbbswiki.item_mcbbswiki_chestplate_level1": "MCBBS Wiki Chestplate (Level1)",
+  "item.mcbbswiki.item_mcbbswiki_leggings_level1": "MCBBS Wiki Leggings (Level1)",
+  "item.mcbbswiki.item_mcbbswiki_boots_level1": "MCBBS Wiki Boots (Level1)"
 }

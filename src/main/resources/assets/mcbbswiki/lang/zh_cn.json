@@ -1,20 +1,27 @@
 {
-  "group.mcbbswiki.mcbbswiki_group": "MCBBS Wiki",
-  "block.mcbbswiki.block_qwerty5238": "QWERTY_52_38方块",
+  "group.mcbbswiki.mcbbswiki_group": "MCBBS Wiki组",
+  "block.mcbbswiki.block_qwerty5238": "QWERTY_52_38 方块",
 
-  "block.mcbbswiki.block_eicy": "Eicy方块",
-  "block.mcbbswiki.block_sheeprealms": "Sheep-realms方块",
-  "block.mcbbswiki.block_mashkjo": "MashKJo方块",
-  "block.mcbbswiki.block_freeliealgebra": "自由李代数方块",
-  "block.mcbbswiki.block_saltlovely": "Salt Lovely方块",
-  "block.mcbbswiki.block_woshiren1012": "我是人1012方块",
-  "block.mcbbswiki.block_whitei": "White i方块",
+  "block.mcbbswiki.block_eicy": "Eicy 方块",
+  "block.mcbbswiki.block_sheeprealms": "Sheep-realms 方块",
+  "block.mcbbswiki.block_mashkjo": "MashKJo 方块",
+  "block.mcbbswiki.block_freeliealgebra": "自由李代数 方块",
+  "block.mcbbswiki.block_saltlovely": "Salt Lovely 方块",
+  "block.mcbbswiki.block_woshiren1012": "我是人1012 方块",
+  "block.mcbbswiki.block_whitei": "White i 方块",
 
-  "block.mcbbswiki.block_noobx": "新人x号方块",
-  "block.mcbbswiki.block_aurora": "北极仙光方块",
-  "block.mcbbswiki.block_eminfantry": "电磁步兵方块",
+  "block.mcbbswiki.block_noobx": "新人x号 方块",
+  "block.mcbbswiki.block_aurora": "北极仙光 方块",
+  "block.mcbbswiki.block_eminfantry": "电磁步兵 方块",
 
-  "item.mcbbswiki.item_sword_eee": "EEE剑",
+  "item.mcbbswiki.item_sword_eee": "EEE 剑",
   "item.mcbbswiki.item_eee": "EEE",
-  "item.mcbbswiki.item_stacked_eee": "堆叠的EEE"
+  "item.mcbbswiki.item_stacked_eee": "堆叠的EEE",
+
+  "block.mcbbswiki.block_mcbbswiki_ore": "MCBBS Wiki 矿",
+  "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki 锭",
+  "item.mcbbswiki.item_mcbbswiki_helmet_level1": "MCBBS Wiki 头盔 (1级)",
+  "item.mcbbswiki.item_mcbbswiki_chestplate_level1": "MCBBS Wiki 胸甲 (1级)",
+  "item.mcbbswiki.item_mcbbswiki_leggings_level1": "MCBBS Wiki 护腿 (1级)",
+  "item.mcbbswiki.item_mcbbswiki_boots_level1": "MCBBS Wiki 靴子 (1级)"
 }

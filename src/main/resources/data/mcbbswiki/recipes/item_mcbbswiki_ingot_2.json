@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "mcbbswiki:block_mcbbswiki_ore"
+  },
+  "result": "mcbbswiki:item_mcbbswiki_ingot",
+  "experience": 2.5,
+  "cookingtime": 100
+}

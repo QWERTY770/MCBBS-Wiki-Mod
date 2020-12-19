@@ -6,6 +6,9 @@ import net.minecraft.item.ItemStack;
 
 import javax.annotation.Nonnull;
 
+/**
+ * @author QWERTY_52_38@mcbbs-wiki.cn
+ */
 public class McbbsWikiGroupClass extends ItemGroup {
     public McbbsWikiGroupClass(){
         super("mcbbswiki_group");
