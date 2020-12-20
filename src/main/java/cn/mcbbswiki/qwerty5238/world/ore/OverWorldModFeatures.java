@@ -23,7 +23,7 @@ public class OverWorldModFeatures {
 
     @SubscribeEvent
     public static void setup(FMLCommonSetupEvent event) {
-        MCBBSWIKIOVERWORLDORECONFIG = Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "block_mcbbswiki_ore",
+        MCBBSWIKIOVERWORLDORECONFIG = Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "mcbbswiki:block_mcbbswiki_ore",
                 Feature.ORE.withConfiguration(
                         new OreFeatureConfig(
                                 OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
