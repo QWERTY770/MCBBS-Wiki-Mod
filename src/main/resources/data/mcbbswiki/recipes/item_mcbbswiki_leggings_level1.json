@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ddd",
+    "d d",
+    "d d"
+  ],
+  "key": {
+    "d": {
+      "item": "mcbbswiki:item_mcbbswiki_ingot"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:item_mcbbswiki_leggings_level1",
+    "count": 1
+  }
+}

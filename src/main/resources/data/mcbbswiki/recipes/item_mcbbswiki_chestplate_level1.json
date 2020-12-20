@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "d d",
+    "ddd",
+    "ddd"
+  ],
+  "key": {
+    "d": {
+      "item": "mcbbswiki:item_mcbbswiki_ingot"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:item_mcbbswiki_chestplate_level1",
+    "count": 1
+  }
+}
