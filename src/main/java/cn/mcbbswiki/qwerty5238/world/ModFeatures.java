@@ -1,4 +1,4 @@
-package cn.mcbbswiki.qwerty5238.world.ore;
+package cn.mcbbswiki.qwerty5238.world;
 
 import cn.mcbbswiki.qwerty5238.McbbsWiki;
 import cn.mcbbswiki.qwerty5238.registry.BlockRegistry;
@@ -14,19 +14,17 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
-/**
- * @author QWERTY_52_38@mcbbs-wiki.cn
- */
-public class OverWorldModFeatures {
-    public static ConfiguredFeature<?, ?> MCBBSWIKIOVERWORLDORECONFIG;
+@Mod.EventBusSubscriber(modid = McbbsWiki.id, bus = Mod.EventBusSubscriber.Bus.MOD)
+public class ModFeatures {
+    public static ConfiguredFeature<?, ?> MCBBSWIKIORECONFIG;
 
     @SubscribeEvent
     public static void setup(FMLCommonSetupEvent event) {
-        MCBBSWIKIOVERWORLDORECONFIG = Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "mcbbswiki:block_mcbbswiki_base_ore",
+        MCBBSWIKIORECONFIG = Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "block_mcbbswiki_ore",
                 Feature.ORE.withConfiguration(
                         new OreFeatureConfig(
                                 OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-                                BlockRegistry.block_mcbbswiki_base_ore.get().getDefaultState(), 3)
+                                BlockRegistry.block_mcbbswiki_ore.get().getDefaultState(), 3)
                 ).range(16).square().func_242731_b(16)
         );
     }
@@ -35,7 +33,7 @@ public class OverWorldModFeatures {
     public void onBiomeLoading(final BiomeLoadingEvent biome) {
         if(biome.getCategory() == Biome.Category.RIVER || biome.getCategory() == Biome.Category.OCEAN){
         biome.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES)
-                .add(() -> OverWorldModFeatures.MCBBSWIKIOVERWORLDORECONFIG);
+                .add(() -> ModFeatures.MCBBSWIKIORECONFIG);
         }
     }
 }

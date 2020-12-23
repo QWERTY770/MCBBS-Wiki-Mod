@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "item": "mcbbswiki:block_mcbbswiki_ore"
+    "item": "mcbbswiki:block_mcbbswiki_base_ore"
   },
   "result": "mcbbswiki:item_mcbbswiki_ingot",
   "experience": 2.5,
