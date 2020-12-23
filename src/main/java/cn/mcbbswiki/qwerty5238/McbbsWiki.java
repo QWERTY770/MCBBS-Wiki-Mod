@@ -1,6 +1,7 @@
 package cn.mcbbswiki.qwerty5238;
 
 import cn.mcbbswiki.qwerty5238.registry.*;
+import cn.mcbbswiki.qwerty5238.world.ore.OverWorldModFeatures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -17,5 +18,9 @@ public class McbbsWiki {
         ItemRegistry.ITEMS.register(
                 FMLJavaModLoadingContext.get().getModEventBus()
         );
+        BiomeRegistry.BIOMES.register(
+                FMLJavaModLoadingContext.get().getModEventBus()
+        );
+        FMLJavaModLoadingContext.get().getModEventBus().register(new OverWorldModFeatures());
     }
 }

@@ -1,0 +1,48 @@
+{
+  "type": "mcbbswiki:mcbbswiki_normal_dimension_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": {
+      "bedrock_roof_position": -1,
+      "bedrock_floor_position": 0,
+      "sea_level": 63,
+      "disable_mob_generation": false,
+      "default_block": {
+        "Name": "minecraft:dirt"
+      },
+      "default_fluid": {
+        "Name": "minecraft:water",
+        "Properties": {
+          "level": "0"
+        }
+      }
+    },
+    "biome_source": {
+      "biomes": [
+        {
+          "biome": "mcbbswiki:plains",
+          "parameters": {
+            "altitude": 0.8,
+            "temperature": 0.8,
+            "humidity": 0.8,
+            "weirdness": 0.0,
+            "offset": 0.1
+          }
+        },
+        {
+          "biome": "mcbbswiki:mountains",
+          "parameters": {
+            "altitude": 0.2,
+            "temperature": 0.2,
+            "humidity": 0.2,
+            "weirdness": 0.0,
+            "offset": 0.25
+          }
+        }
+      ],
+      "type": "minecraft:vanilla_layered",
+      "large_biomes": false,
+      "legacy_biome_init_layer": false
+    }
+  }
+}

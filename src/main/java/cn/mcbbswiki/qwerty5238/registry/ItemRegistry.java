@@ -35,7 +35,7 @@ public abstract class ItemRegistry {
     public static RegistryObject<Item> item_stacked_eee = ITEMS.register("item_stacked_eee", ItemStackedEEE::new);
     // eee
 
-    public static RegistryObject<Item> block_mcbbswiki_ore = ITEMS.register("block_mcbbswiki_ore", () -> new BlockItem(BlockRegistry.block_mcbbswiki_ore.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static RegistryObject<Item> block_mcbbswiki_base_ore = ITEMS.register("block_mcbbswiki_base_ore", () -> new BlockItem(BlockRegistry.block_mcbbswiki_base_ore.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
     public static RegistryObject<Item> item_mcbbswiki_ingot = ITEMS.register("item_mcbbswiki_ingot", ItemMcbbsWikiIngot::new);
     public static RegistryObject<Item> item_mcbbswiki_helmet_level1 = ITEMS.register("item_mcbbswiki_helmet_level1", ItemMcbbsWikiHelmetLevel1::new);
     public static RegistryObject<Item> item_mcbbswiki_chestplate_level1 = ITEMS.register("item_mcbbswiki_chestplate_level1", ItemMcbbsWikiChestplateLevel1::new);
