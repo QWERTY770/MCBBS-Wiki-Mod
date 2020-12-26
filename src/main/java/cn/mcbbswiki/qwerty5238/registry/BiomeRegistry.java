@@ -7,7 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class BiomeRegistry {
-    public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, "neutrino");
-    public static RegistryObject<Biome> MCBBSWIKIPLAINSBIOME = BIOMES.register("mcbbswiki:plains", McbbsWikiBiomeMaker::makePlainsBiome);
-    public static RegistryObject<Biome> MCBBSWIKIMOUNTAINSBIOME = BIOMES.register("mcbbswiki:mountains", McbbsWikiBiomeMaker::makeMountainsBiome);
+    public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, "mcbbswiki");
+    public static RegistryObject<Biome> MCBBSWIKIPLAINSBIOME = BIOMES.register("plains", McbbsWikiBiomeMaker::makePlainsBiome);
+    public static RegistryObject<Biome> MCBBSWIKIMOUNTAINSBIOME = BIOMES.register("mountains", McbbsWikiBiomeMaker::makeMountainsBiome);
 }

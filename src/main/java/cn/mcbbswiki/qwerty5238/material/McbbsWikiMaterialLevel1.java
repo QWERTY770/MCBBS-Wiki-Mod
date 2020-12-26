@@ -53,7 +53,7 @@ public class McbbsWikiMaterialLevel1 implements IArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 2.1F;
+        return 2.3F;
     }
 
     @Override

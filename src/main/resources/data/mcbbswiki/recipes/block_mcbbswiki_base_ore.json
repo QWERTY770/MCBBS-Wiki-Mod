@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i g",
+    "idg",
+    "i g"
+  ],
+  "key": {
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "g": {
+      "item": "minecraft:gold_block"
+    },
+    "i":{
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:block_mcbbswiki_base_ore",
+    "count": 1
+  }
+}
