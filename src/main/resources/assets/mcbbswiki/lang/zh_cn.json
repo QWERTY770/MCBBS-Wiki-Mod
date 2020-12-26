@@ -18,7 +18,7 @@
   "item.mcbbswiki.item_eee": "EEE",
   "item.mcbbswiki.item_stacked_eee": "堆叠的EEE",
 
-  "block.mcbbswiki.block_mcbbswiki_ore": "MCBBS Wiki 矿",
+  "block.mcbbswiki.block_mcbbswiki_base_ore": "MCBBS Wiki 基础矿",
   "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki 锭",
   "item.mcbbswiki.item_mcbbswiki_helmet_level1": "MCBBS Wiki 头盔 (1级)",
   "item.mcbbswiki.item_mcbbswiki_chestplate_level1": "MCBBS Wiki 胸甲 (1级)",
