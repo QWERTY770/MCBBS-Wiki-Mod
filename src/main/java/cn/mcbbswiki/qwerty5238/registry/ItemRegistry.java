@@ -41,5 +41,7 @@ public abstract class ItemRegistry {
     public static RegistryObject<Item> item_mcbbswiki_chestplate_level1 = ITEMS.register("item_mcbbswiki_chestplate_level1", ItemMcbbsWikiChestplateLevel1::new);
     public static RegistryObject<Item> item_mcbbswiki_leggings_level1 = ITEMS.register("item_mcbbswiki_leggings_level1", ItemMcbbsWikiLeggingsLevel1::new);
     public static RegistryObject<Item> item_mcbbswiki_boots_level1 = ITEMS.register("item_mcbbswiki_boots_level1", ItemMcbbsWikiBootsLevel1::new);
+    public static RegistryObject<Item> item_transporter = ITEMS.register("item_transporter", ItemTransporter::new);
+    public static RegistryObject<Item> block_mcbbswiki = ITEMS.register("block_mcbbswiki", () -> new BlockItem(BlockRegistry.block_mcbbswiki.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
     // mcbbs wiki things
 }
