@@ -1,5 +1,5 @@
 {
-  "group.mcbbswiki.mcbbswiki_group": "MCBBS Wiki组",
+  "itemGroup.mcbbswiki_group": "MCBBS Wiki组",
   "block.mcbbswiki.block_qwerty5238": "QWERTY_52_38 方块",
 
   "block.mcbbswiki.block_eicy": "Eicy 方块",
@@ -23,5 +23,7 @@
   "item.mcbbswiki.item_mcbbswiki_helmet_level1": "MCBBS Wiki 头盔 (1级)",
   "item.mcbbswiki.item_mcbbswiki_chestplate_level1": "MCBBS Wiki 胸甲 (1级)",
   "item.mcbbswiki.item_mcbbswiki_leggings_level1": "MCBBS Wiki 护腿 (1级)",
-  "item.mcbbswiki.item_mcbbswiki_boots_level1": "MCBBS Wiki 靴子 (1级)"
+  "item.mcbbswiki.item_mcbbswiki_boots_level1": "MCBBS Wiki 靴子 (1级)",
+  "item.mcbbswiki.item_transporter": "MCBBS Wiki 传送器",
+  "block.mcbbswiki.block_mcbbswiki": "MCBBS Wiki 方块"
 }

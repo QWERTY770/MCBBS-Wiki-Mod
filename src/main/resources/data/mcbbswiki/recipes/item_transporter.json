@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "item": "mcbbswiki:item_mcbbswiki_ingot"
+    }
+  ],
+  "result": {
+    "item": "mcbbswiki:item_transporter",
+    "count": 1
+  }
+}

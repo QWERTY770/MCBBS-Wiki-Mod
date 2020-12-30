@@ -7,32 +7,13 @@
       "type": "minecraft:vanilla_layered",
       "seed": 0,
       "biomes":[
-        {
-          "biome": "mcbbswiki:plains",
-          "parameters": {
-            "altitude": 0.125,
-            "temperature": 0.8,
-            "humidity": 0.8,
-            "weirdness": 0.0,
-            "offset": 0.2
-          }
-        },
-        {
-          "biome": "mcbbswiki:mountains",
-          "parameters": {
-            "altitude": 0.9,
-            "temperature": 0.2,
-            "humidity": 0.2,
-            "weirdness": 0.0,
-            "offset": 0.3
-          }
-        }
+          "mcbbswiki:plains",
+          "mcbbswiki:mountains"
       ],
       "large_biomes": false,
       "legacy_biome_init_layer": false
     },
     "settings": {
-      "name": "minecraft:overworld",
       "bedrock_roof_position": -10,
       "bedrock_floor_position": 0,
       "sea_level": 63,
