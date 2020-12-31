@@ -10,17 +10,14 @@ import java.util.Iterator;
 public abstract class GetWorld {
     public static ServerWorld getWorldFromServer(MinecraftServer server, String id){
         Iterator<ServerWorld> worlds = server.getWorlds().iterator();
-        ServerWorld result = null;
+        ServerWorld t;
         while (worlds.hasNext()){
-            result = worlds.next();
-            if (result.getDimensionKey().getLocation().toString().equals(id)){
-                return result;
+            t = worlds.next();
+            if (t.getDimensionKey().getLocation().toString().equals(id)){
+                return t;
             }
         }
-        if (result == null){
-            result = server.getWorld(World.OVERWORLD);
-        }
-        return result;
+        return server.getWorld(World.OVERWORLD);
     }
 
     @Debug
