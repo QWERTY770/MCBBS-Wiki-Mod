@@ -2,6 +2,7 @@ package cn.mcbbswiki.qwerty5238.item;
 
 import cn.mcbbswiki.qwerty5238.registry.BlockRegistry;
 import cn.mcbbswiki.qwerty5238.registry.ModGroupRegistry;
+import cn.mcbbswiki.qwerty5238.util.CommonUtils;
 import cn.mcbbswiki.qwerty5238.util.GetWorld;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -16,9 +17,9 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 
+import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class ItemTransporter extends Item {
@@ -28,6 +29,7 @@ public class ItemTransporter extends Item {
 
     @Override
     @ParametersAreNonnullByDefault
+    @Nonnull
     public ActionResultType onItemUse(ItemUseContext context) {
         World world = context.getWorld();
         BlockPos blockpos = context.getPos();
@@ -59,7 +61,10 @@ public class ItemTransporter extends Item {
                             break;
                         }
                     }
-                    playerentity.sendMessage(new StringTextComponent("Teleported to MCBBS Wiki Normal Dimension"), playerentity.getUniqueID());
+                    CommonUtils.sendMsg(playerentity,"Teleported to MCBBS Wiki Normal Dimension");
+                    System.out.println(GetWorld.getServerWorlds(server));
+                    System.out.println(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension").getDimensionKey().getLocation().toString());
+                    System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
                     return ActionResultType.SUCCESS;
                 }
             }
@@ -83,16 +88,19 @@ public class ItemTransporter extends Item {
                             break;
                         }
                     }
-                    playerentity.sendMessage(new StringTextComponent("Teleported to OverWorld"), playerentity.getUniqueID());
+                    CommonUtils.sendMsg(playerentity,"Teleported to Overworld Dimension");
+                    System.out.println(GetWorld.getServerWorlds(server));
+                    System.out.println(GetWorld.getWorldFromServer(server, "minecraft:overworld").getDimensionKey().getLocation().toString());
+                    System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
                     return ActionResultType.SUCCESS;
                 }
             }
             else {
-                playerentity.sendMessage(new StringTextComponent("You are in " + playerentity.world.getDimensionKey().getRegistryName().toString() + " dimension! Cannot teleport!"), playerentity.getUniqueID());
+                CommonUtils.sendMsg(playerentity,"You are in " + playerentity.world.getDimensionKey().getRegistryName().toString() + " dimension! Cannot teleport!");
             }
         }
         else {
-            playerentity.sendMessage(new StringTextComponent("You selected wrong block!"), playerentity.getUniqueID());
+            CommonUtils.sendMsg(playerentity,"You selected wrong block!");
         }
         return ActionResultType.PASS;
     }
