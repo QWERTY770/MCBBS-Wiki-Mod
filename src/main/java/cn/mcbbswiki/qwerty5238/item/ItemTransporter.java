@@ -42,8 +42,6 @@ public class ItemTransporter extends Item {
         MinecraftServer server = playerentity.getServer();
         assert server != null;
         Vector3d t = playerentity.getPositionVec();
-        int posX = (int)playerentity.getPosX();
-        int posZ = (int)playerentity.getPosZ();
         world = playerentity.getEntityWorld();
         Vector2f pitchYaw = playerentity.getPitchYaw();
         if (block == BlockRegistry.block_mcbbswiki.get()) {
@@ -51,6 +49,9 @@ public class ItemTransporter extends Item {
             if (playerentity.world.getDimensionKey() == World.OVERWORLD){
                 if(playerentity instanceof ServerPlayerEntity){
                     ((ServerPlayerEntity) playerentity).teleport(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
+                    int posX = (int)playerentity.getPosX();
+                    int posZ = (int)playerentity.getPosZ();
+                    world = playerentity.getEntityWorld();
                     for (int h = 255; h > 0; h--){
                         Material m = world.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
                         if (m != Material.AIR){
@@ -66,15 +67,18 @@ public class ItemTransporter extends Item {
                         }
                     }
                     CommonUtils.sendMsg(playerentity,"Teleported to MCBBS Wiki Normal Dimension");
-                    System.out.println(GetWorld.getServerWorlds(server));
-                    System.out.println(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension").getDimensionKey().getLocation().toString());
-                    System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
+                    // System.out.println(GetWorld.getServerWorlds(server));
+                    // System.out.println(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension").getDimensionKey().getLocation().toString());
+                    // System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
                     return ActionResultType.SUCCESS;
                 }
             }
             else if (playerentity.world.getDimensionKey().getLocation().toString().equals("mcbbswiki:mcbbswiki_normal_dimension")){
                 if(playerentity instanceof ServerPlayerEntity){
                     ((ServerPlayerEntity) playerentity).teleport(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
+                    int posX = (int)playerentity.getPosX();
+                    int posZ = (int)playerentity.getPosZ();
+                    world = playerentity.getEntityWorld();
                     for (int h = 255; h > 0; h--){
                         Material m = world.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
                         if (m != Material.AIR){
@@ -90,9 +94,9 @@ public class ItemTransporter extends Item {
                         }
                     }
                     CommonUtils.sendMsg(playerentity,"Teleported to Overworld Dimension");
-                    System.out.println(GetWorld.getServerWorlds(server));
-                    System.out.println(GetWorld.getWorldFromServer(server, "minecraft:overworld").getDimensionKey().getLocation().toString());
-                    System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
+                    // System.out.println(GetWorld.getServerWorlds(server));
+                    // System.out.println(GetWorld.getWorldFromServer(server, "minecraft:overworld").getDimensionKey().getLocation().toString());
+                    // System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
                     return ActionResultType.SUCCESS;
                 }
             }
