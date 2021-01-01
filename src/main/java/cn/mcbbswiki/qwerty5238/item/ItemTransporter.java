@@ -17,6 +17,8 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.vector.Vector2f;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 
 import javax.annotation.Nonnull;
@@ -39,14 +41,16 @@ public class ItemTransporter extends Item {
         assert playerentity != null;
         MinecraftServer server = playerentity.getServer();
         assert server != null;
+        Vector3d t = playerentity.getPositionVec();
+        int posX = (int)playerentity.getPosX();
+        int posZ = (int)playerentity.getPosZ();
+        world = playerentity.getEntityWorld();
+        Vector2f pitchYaw = playerentity.getPitchYaw();
         if (block == BlockRegistry.block_mcbbswiki.get()) {
             world.playSound(playerentity, blockpos, SoundEvents.BLOCK_PORTAL_AMBIENT, SoundCategory.BLOCKS, 1.0F, 1.0F);
             if (playerentity.world.getDimensionKey() == World.OVERWORLD){
                 if(playerentity instanceof ServerPlayerEntity){
-                    playerentity.changeDimension(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"));
-                    int posX = (int)playerentity.getPosX();
-                    int posZ = (int)playerentity.getPosZ();
-                    world = playerentity.getEntityWorld();
+                    ((ServerPlayerEntity) playerentity).teleport(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
                     for (int h = 255; h > 0; h--){
                         Material m = world.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
                         if (m != Material.AIR){
@@ -70,10 +74,7 @@ public class ItemTransporter extends Item {
             }
             else if (playerentity.world.getDimensionKey().getLocation().toString().equals("mcbbswiki:mcbbswiki_normal_dimension")){
                 if(playerentity instanceof ServerPlayerEntity){
-                    playerentity.changeDimension(GetWorld.getWorldFromServer(server, "minecraft:overworld"));
-                    int posX = (int)playerentity.getPosX();
-                    int posZ = (int)playerentity.getPosZ();
-                    world = playerentity.getEntityWorld();
+                    ((ServerPlayerEntity) playerentity).teleport(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
                     for (int h = 255; h > 0; h--){
                         Material m = world.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
                         if (m != Material.AIR){
