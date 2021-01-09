@@ -1,4 +1,4 @@
-package cn.mcbbswiki.qwerty5238.material;
+package cn.mcbbswiki.qwerty5238.tooltype;
 
 import cn.mcbbswiki.qwerty5238.registry.ItemRegistry;
 import net.minecraft.inventory.EquipmentSlotType;

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dd",
+    "ds",
+    " s"
+  ],
+  "key": {
+    "d": {
+      "item": "mcbbswiki:item_mcbbswiki_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:item_mcbbswiki_axe_level1",
+    "count": 1
+  }
+}

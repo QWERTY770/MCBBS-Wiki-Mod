@@ -1,6 +1,5 @@
 package cn.mcbbswiki.qwerty5238.world.ore;
 
-import cn.mcbbswiki.qwerty5238.McbbsWiki;
 import cn.mcbbswiki.qwerty5238.registry.BlockRegistry;
 import cn.mcbbswiki.qwerty5238.util.Uncompleted;
 import net.minecraft.util.registry.Registry;
@@ -17,6 +16,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 /**
  * @author QWERTY_52_38@mcbbs-wiki.cn
  */
+
+// Crashed!
+// Use recipes instead
 @Uncompleted
 public class OverWorldModFeatures {
     public static ConfiguredFeature<?, ?> MCBBSWIKIOVERWORLDORECONFIG;

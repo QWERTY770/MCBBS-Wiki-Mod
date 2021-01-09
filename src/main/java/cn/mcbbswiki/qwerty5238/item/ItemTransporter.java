@@ -62,12 +62,12 @@ public class ItemTransporter extends Item {
                                     }
                                 }
                             }
-                            playerentity.setPosition(posX, h, posZ);
+                            playerentity.setPosition(posX, h + 2, posZ);
                             break;
                         }
                     }
                     CommonUtils.sendMsg(playerentity,"Teleported to MCBBS Wiki Normal Dimension");
-                    // System.out.println(GetWorld.getServerWorlds(server));
+                    System.out.println(GetWorld.getServerWorlds(server));
                     // System.out.println(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension").getDimensionKey().getLocation().toString());
                     // System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
                     return ActionResultType.SUCCESS;
@@ -101,7 +101,7 @@ public class ItemTransporter extends Item {
                 }
             }
             else {
-                CommonUtils.sendMsg(playerentity,"You are in " + playerentity.world.getDimensionKey().getRegistryName().toString() + " dimension! Cannot teleport!");
+                CommonUtils.sendMsg(playerentity,"You are in " + playerentity.world.getDimensionKey().getLocation().toString() + " dimension! Cannot teleport!");
             }
         }
         else {

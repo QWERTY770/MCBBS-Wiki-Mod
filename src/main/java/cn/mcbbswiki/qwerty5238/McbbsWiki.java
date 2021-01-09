@@ -1,6 +1,8 @@
 package cn.mcbbswiki.qwerty5238;
 
-import cn.mcbbswiki.qwerty5238.registry.*;
+import cn.mcbbswiki.qwerty5238.registry.BiomeRegistry;
+import cn.mcbbswiki.qwerty5238.registry.BlockRegistry;
+import cn.mcbbswiki.qwerty5238.registry.ItemRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
