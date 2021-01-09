@@ -20,10 +20,17 @@
 
   "block.mcbbswiki.block_mcbbswiki_base_ore": "MCBBS Wiki 基础矿",
   "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki 锭",
+  "item.mcbbswiki.item_transporter": "MCBBS Wiki 传送器",
+  "block.mcbbswiki.block_mcbbswiki": "MCBBS Wiki 方块",
+
   "item.mcbbswiki.item_mcbbswiki_helmet_level1": "MCBBS Wiki 头盔 (1级)",
   "item.mcbbswiki.item_mcbbswiki_chestplate_level1": "MCBBS Wiki 胸甲 (1级)",
   "item.mcbbswiki.item_mcbbswiki_leggings_level1": "MCBBS Wiki 护腿 (1级)",
   "item.mcbbswiki.item_mcbbswiki_boots_level1": "MCBBS Wiki 靴子 (1级)",
-  "item.mcbbswiki.item_transporter": "MCBBS Wiki 传送器",
-  "block.mcbbswiki.block_mcbbswiki": "MCBBS Wiki 方块"
+
+  "item.mcbbswiki.item_mcbbswiki_sword_level1": "MCBBS Wiki 剑 (1级)",
+  "item.mcbbswiki.item_mcbbswiki_shovel_level1": "MCBBS Wiki 铲 (1级)",
+  "item.mcbbswiki.item_mcbbswiki_hoe_level1": "MCBBS Wiki 锄 (1级)",
+  "item.mcbbswiki.item_mcbbswiki_axe_level1": "MCBBS Wiki 斧 (1级)",
+  "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki 镐 (1级)"
 }

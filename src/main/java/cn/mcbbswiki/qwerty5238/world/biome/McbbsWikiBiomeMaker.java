@@ -44,8 +44,8 @@ public class McbbsWikiBiomeMaker {
         return (new Biome.Builder())
                 .precipitation(Biome.RainType.RAIN)
                 .category(Biome.Category.PLAINS)
-                .depth(0.125F)
-                .scale(0.05F)
+                .depth(0.1F) // different from vanilla
+                .scale(0.15F)
                 .temperature(0.8F)
                 .downfall(0.4F)
                 .setEffects((new BiomeAmbience.Builder())

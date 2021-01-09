@@ -26,7 +26,7 @@ public class ItemSwordEEE extends SwordItem {
 
         @Override
         public int getHarvestLevel() {
-            return 3;
+            return 2;
         }
 
         @Override
@@ -40,6 +40,6 @@ public class ItemSwordEEE extends SwordItem {
         }
     };
     public ItemSwordEEE() {
-        super(I_ITEM_TIER, 5, -2F, new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup));
+        super(I_ITEM_TIER, 5, -2.2F, new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup));
     }
 }

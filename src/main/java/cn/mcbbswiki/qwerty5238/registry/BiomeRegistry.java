@@ -6,7 +6,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class BiomeRegistry {
+public abstract class BiomeRegistry {
     public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, "mcbbswiki");
     public static RegistryObject<Biome> MCBBSWIKIPLAINSBIOME = BIOMES.register("plains", McbbsWikiBiomeMaker::makePlainsBiome);
     public static RegistryObject<Biome> MCBBSWIKIMOUNTAINSBIOME = BIOMES.register("mountains", McbbsWikiBiomeMaker::makeMountainsBiome);

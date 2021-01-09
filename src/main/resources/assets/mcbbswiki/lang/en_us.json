@@ -19,11 +19,18 @@
   "item.mcbbswiki.item_stacked_eee": "Stacked EEE",
 
   "block.mcbbswiki.block_mcbbswiki_base_ore": "MCBBS Wiki Base Ore",
+  "item.mcbbswiki.item_transporter": "MCBBS Wiki Transporter",
+  "block.mcbbswiki.block_mcbbswiki": "MCBBS Wiki Block",
+
   "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki Ingot",
   "item.mcbbswiki.item_mcbbswiki_helmet_level1": "MCBBS Wiki Helmet (Level1)",
   "item.mcbbswiki.item_mcbbswiki_chestplate_level1": "MCBBS Wiki Chestplate (Level1)",
   "item.mcbbswiki.item_mcbbswiki_leggings_level1": "MCBBS Wiki Leggings (Level1)",
   "item.mcbbswiki.item_mcbbswiki_boots_level1": "MCBBS Wiki Boots (Level1)",
-  "item.mcbbswiki.item_transporter": "MCBBS Wiki Transporter",
-  "block.mcbbswiki.block_mcbbswiki": "MCBBS Wiki Block"
+
+  "item.mcbbswiki.item_mcbbswiki_sword_level1": "MCBBS Wiki Sword (Level1)",
+  "item.mcbbswiki.item_mcbbswiki_shovel_level1": "MCBBS Wiki Shovel (Level1)",
+  "item.mcbbswiki.item_mcbbswiki_hoe_level1": "MCBBS Wiki Hoe (Level1)",
+  "item.mcbbswiki.item_mcbbswiki_axe_level1": "MCBBS Wiki Axe (Level1)",
+  "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki Pickaxe (Level1)"
 }
