@@ -4,7 +4,7 @@ license="GNU General Public License v3.0"
 issueTrackerURL="https://github.com/QWERTY770/MCBBS-Wiki-Mod/issues"
 [[mods]]
 modId="mcbbswiki"
-version="0.6b1"
+version="0.6"
 displayName="MCBBS Wiki"
 displayURL="https://github.com/QWERTY770/MCBBS-Wiki-Mod"
 logoFile="mcbbswiki.png"
@@ -16,12 +16,12 @@ description='''
 [[dependencies.mcbbswiki]]
     modId="forge"
     mandatory=true
-    versionRange="[34,)"
+    versionRange="[33,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.mcbbswiki]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.3, 1.16.4]"
+    versionRange="[1.16.1, 1.16.5]"
     ordering="NONE"
     side="BOTH"

@@ -32,5 +32,7 @@
   "item.mcbbswiki.item_mcbbswiki_shovel_level1": "MCBBS Wiki 铲 (1级)",
   "item.mcbbswiki.item_mcbbswiki_hoe_level1": "MCBBS Wiki 锄 (1级)",
   "item.mcbbswiki.item_mcbbswiki_axe_level1": "MCBBS Wiki 斧 (1级)",
-  "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki 镐 (1级)"
+  "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki 镐 (1级)",
+
+  "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki 小型怪物"
 }
