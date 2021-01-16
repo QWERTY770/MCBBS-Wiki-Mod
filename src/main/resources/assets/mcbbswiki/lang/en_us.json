@@ -3,10 +3,10 @@
   "block.mcbbswiki.block_qwerty5238": "QWERTY_52_38 Block",
 
   "block.mcbbswiki.block_eicy": "Eicy Block",
-  "block.mcbbswiki.block_sheep_realms": "Sheep-realms Block",
+  "block.mcbbswiki.block_sheeprealms": "Sheep-realms Block",
   "block.mcbbswiki.block_mashkjo": "MashKJo Block",
   "block.mcbbswiki.block_freeliealgebra": "Free Lie Algebra Block",
-  "block.mcbbswiki.block_salt_lovely": "Salt Lovely Block",
+  "block.mcbbswiki.block_saltlovely": "Salt Lovely Block",
   "block.mcbbswiki.block_woshiren1012": "WoShiRen 1012 Block",
   "block.mcbbswiki.block_whitei": "White i Block",
 
@@ -32,5 +32,7 @@
   "item.mcbbswiki.item_mcbbswiki_shovel_level1": "MCBBS Wiki Shovel (Level1)",
   "item.mcbbswiki.item_mcbbswiki_hoe_level1": "MCBBS Wiki Hoe (Level1)",
   "item.mcbbswiki.item_mcbbswiki_axe_level1": "MCBBS Wiki Axe (Level1)",
-  "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki Pickaxe (Level1)"
+  "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki Pickaxe (Level1)",
+
+  "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki Small Monster"
 }
