@@ -13,7 +13,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 public class LargeMcbbsWikiMonsterRender extends MobRenderer<LargeMcbbsWikiMonsterEntity, LargeMcbbsWikiMonsterModel> {
 
     public LargeMcbbsWikiMonsterRender(EntityRendererManager renderManagerIn) {
-        super(renderManagerIn, new LargeMcbbsWikiMonsterModel(), 1F);
+        super(renderManagerIn, new LargeMcbbsWikiMonsterModel(), 2F);
     }
 
     public LargeMcbbsWikiMonsterRender(EntityRendererManager renderManagerIn, LargeMcbbsWikiMonsterModel entityModelIn, float shadowSizeIn) {

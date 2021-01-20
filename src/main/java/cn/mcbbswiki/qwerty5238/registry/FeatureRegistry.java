@@ -7,7 +7,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class FeatureRegistry {
+public abstract class FeatureRegistry {
     public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(ForgeRegistries.FEATURES, "mcbbswiki");
     public static RegistryObject<McbbsWikiLuckyBlockFeature> feature_lucky_block = FEATURES.register("feature_lucky_block", () -> new McbbsWikiLuckyBlockFeature(NoFeatureConfig.field_236558_a_));
 }

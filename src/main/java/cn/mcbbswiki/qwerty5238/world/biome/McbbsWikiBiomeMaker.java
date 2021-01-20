@@ -34,7 +34,7 @@ public class McbbsWikiBiomeMaker {
 
         DefaultBiomeFeatures.withStrongholdAndMineshaft(biomeGeneSettings);
         biomeGeneSettings.withStructure(StructureFeatures.RUINED_PORTAL);
-        biomeGeneSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, FeatureRegistry.feature_lucky_block.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        // biomeGeneSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, FeatureRegistry.feature_lucky_block.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
         DefaultBiomeFeatures.withCavesAndCanyons(biomeGeneSettings);
         DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGeneSettings);
         DefaultBiomeFeatures.withMonsterRoom(biomeGeneSettings);

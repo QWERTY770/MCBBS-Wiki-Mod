@@ -12,8 +12,8 @@ public class LargeMcbbsWikiMonsterModel extends EntityModel<LargeMcbbsWikiMonste
     private final ModelRenderer body;
 
     public LargeMcbbsWikiMonsterModel() {
-        textureWidth = 64;
-        textureHeight = 64;
+        textureWidth = 128;
+        textureHeight = 128;
 
         body = new ModelRenderer(this);
         body.setRotationPoint(8.0F, 24.0F, -8.0F);

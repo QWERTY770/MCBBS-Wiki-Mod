@@ -10,7 +10,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class EntityRegistry {
+public abstract class EntityRegistry {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, McbbsWiki.ID);
     public static final RegistryObject<EntityType<SmallMcbbsWikiMonsterEntity>> entity_small_mcbbswiki_monster = ENTITY_TYPES.register("entity_small_mcbbswiki_monster",
             () -> EntityType.Builder.create(SmallMcbbsWikiMonsterEntity::new, EntityClassification.MISC).size(1F, 0.5F).build("mcbbswiki:entity_small_mcbbswiki_monster"));
