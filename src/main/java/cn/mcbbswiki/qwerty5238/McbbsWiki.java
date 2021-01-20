@@ -1,9 +1,6 @@
 package cn.mcbbswiki.qwerty5238;
 
-import cn.mcbbswiki.qwerty5238.registry.BiomeRegistry;
-import cn.mcbbswiki.qwerty5238.registry.BlockRegistry;
-import cn.mcbbswiki.qwerty5238.registry.EntityRegistry;
-import cn.mcbbswiki.qwerty5238.registry.ItemRegistry;
+import cn.mcbbswiki.qwerty5238.registry.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -34,10 +31,13 @@ public class McbbsWiki {
         ItemRegistry.ITEMS.register(
                 FMLJavaModLoadingContext.get().getModEventBus()
         );
-        BiomeRegistry.BIOMES.register(
+        EntityRegistry.ENTITY_TYPES.register(
                 FMLJavaModLoadingContext.get().getModEventBus()
         );
-        EntityRegistry.ENTITY_TYPES.register(
+        FeatureRegistry.FEATURES.register(
+                FMLJavaModLoadingContext.get().getModEventBus()
+        );
+        BiomeRegistry.BIOMES.register(
                 FMLJavaModLoadingContext.get().getModEventBus()
         );
     }

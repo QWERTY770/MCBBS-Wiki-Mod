@@ -22,6 +22,7 @@
   "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki 锭",
   "item.mcbbswiki.item_transporter": "MCBBS Wiki 传送器",
   "block.mcbbswiki.block_mcbbswiki": "MCBBS Wiki 方块",
+  "block.mcbbswiki.block_mcbbswiki_lucky_block": "MCBBS Wiki 幸运方块",
 
   "item.mcbbswiki.item_mcbbswiki_helmet_level1": "MCBBS Wiki 头盔 (1级)",
   "item.mcbbswiki.item_mcbbswiki_chestplate_level1": "MCBBS Wiki 胸甲 (1级)",
@@ -33,6 +34,9 @@
   "item.mcbbswiki.item_mcbbswiki_hoe_level1": "MCBBS Wiki 锄 (1级)",
   "item.mcbbswiki.item_mcbbswiki_axe_level1": "MCBBS Wiki 斧 (1级)",
   "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki 镐 (1级)",
+  "item.mcbbswiki.item_mcbbswiki_lucky_block_piece": "MCBBS Wiki 幸运方块碎片",
 
-  "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki 小型怪物"
+  "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki 小型怪物",
+  "entity.mcbbswiki.entity_middle_mcbbswiki_monster": "MCBBS Wiki 中型怪物",
+  "entity.mcbbswiki.entity_large_mcbbswiki_monster": "MCBBS Wiki 大型怪物"
 }

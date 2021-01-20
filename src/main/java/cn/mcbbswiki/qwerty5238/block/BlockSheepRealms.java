@@ -9,6 +9,7 @@ public class BlockSheepRealms extends Block {
         super(Properties.create(Material.ROCK)
                 .hardnessAndResistance(30)
                 .harvestTool(ToolType.get("pickaxe"))
-                .harvestLevel(2));
+                .harvestLevel(2)
+                .jumpFactor(2.0F));
     }
 }

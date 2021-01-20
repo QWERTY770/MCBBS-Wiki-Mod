@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mcbbswiki:block_mcbbswiki_ingot"
+    }
+  ],
+  "result": {
+    "item": "mcbbswiki:item_mcbbswiki_ingot",
+    "count": 9
+  }
+}

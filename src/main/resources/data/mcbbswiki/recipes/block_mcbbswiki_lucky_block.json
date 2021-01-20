@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ddd",
+    "ddd",
+    "ddd"
+  ],
+  "key": {
+    "d": {
+      "item": "mcbbswiki:item_mcbbswiki_lucky_block_piece"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:block_mcbbswiki_lucky_block",
+    "count": 1
+  }
+}
