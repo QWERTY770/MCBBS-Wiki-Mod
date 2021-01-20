@@ -18,11 +18,12 @@
   "item.mcbbswiki.item_eee": "EEE",
   "item.mcbbswiki.item_stacked_eee": "Stacked EEE",
 
+  "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki Ingot",
   "block.mcbbswiki.block_mcbbswiki_base_ore": "MCBBS Wiki Base Ore",
   "item.mcbbswiki.item_transporter": "MCBBS Wiki Transporter",
   "block.mcbbswiki.block_mcbbswiki": "MCBBS Wiki Block",
+  "block.mcbbswiki.block_mcbbswiki_lucky_block": "MCBBS Wiki Lucky Block",
 
-  "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki Ingot",
   "item.mcbbswiki.item_mcbbswiki_helmet_level1": "MCBBS Wiki Helmet (Level1)",
   "item.mcbbswiki.item_mcbbswiki_chestplate_level1": "MCBBS Wiki Chestplate (Level1)",
   "item.mcbbswiki.item_mcbbswiki_leggings_level1": "MCBBS Wiki Leggings (Level1)",
@@ -33,6 +34,9 @@
   "item.mcbbswiki.item_mcbbswiki_hoe_level1": "MCBBS Wiki Hoe (Level1)",
   "item.mcbbswiki.item_mcbbswiki_axe_level1": "MCBBS Wiki Axe (Level1)",
   "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki Pickaxe (Level1)",
+  "item.mcbbswiki.item_mcbbswiki_lucky_block_piece": "MCBBS Wiki Lucky Block Piece",
 
-  "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki Small Monster"
+  "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki Small Monster",
+  "entity.mcbbswiki.entity_middle_mcbbswiki_monster": "MCBBS Wiki Middle Monster",
+  "entity.mcbbswiki.entity_large_mcbbswiki_monster": "MCBBS Wiki Large Monster"
 }

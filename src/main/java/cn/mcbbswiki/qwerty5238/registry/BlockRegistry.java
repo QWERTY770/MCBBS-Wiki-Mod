@@ -27,7 +27,9 @@ public abstract class BlockRegistry {
     public static RegistryObject<Block> block_noobx = BLOCKS.register("block_noobx", BlockNoobX::new);
     public static RegistryObject<Block> block_aurora = BLOCKS.register("block_aurora", BlockAurora::new);
     public static RegistryObject<Block> block_eminfantry = BLOCKS.register("block_eminfantry", BlockEMInfantry::new);
-    public static RegistryObject<Block> block_mcbbswiki_base_ore = BLOCKS.register("block_mcbbswiki_base_ore", BlockMcbbsWikiBaseOre::new);
     // 2020/11/25 to 2020/11/26 -- added at 2020/11/26 19:27
+
+    public static RegistryObject<Block> block_mcbbswiki_base_ore = BLOCKS.register("block_mcbbswiki_base_ore", BlockMcbbsWikiBaseOre::new);
     public static RegistryObject<Block> block_mcbbswiki = BLOCKS.register("block_mcbbswiki", BlockMcbbsWiki::new);
+    public static RegistryObject<Block> block_mcbbswiki_lucky_block = BLOCKS.register("block_mcbbswiki_lucky_block", BlockMcbbsWikiLuckyBlock::new);
 }

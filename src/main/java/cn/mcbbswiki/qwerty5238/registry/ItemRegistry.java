@@ -39,6 +39,7 @@ public abstract class ItemRegistry {
     public static RegistryObject<Item> item_mcbbswiki_ingot = ITEMS.register("item_mcbbswiki_ingot", ItemMcbbsWikiIngot::new);
     public static RegistryObject<Item> item_transporter = ITEMS.register("item_transporter", ItemTransporter::new);
     public static RegistryObject<Item> block_mcbbswiki = ITEMS.register("block_mcbbswiki", () -> new BlockItem(BlockRegistry.block_mcbbswiki.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static RegistryObject<Item> block_mcbbswiki_lucky_block = ITEMS.register("block_mcbbswiki_lucky_block", () -> new BlockItem(BlockRegistry.block_mcbbswiki_lucky_block.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
 
     public static RegistryObject<Item> item_mcbbswiki_helmet_level1 = ITEMS.register("item_mcbbswiki_helmet_level1", ItemMcbbsWikiHelmetLevel1::new);
     public static RegistryObject<Item> item_mcbbswiki_chestplate_level1 = ITEMS.register("item_mcbbswiki_chestplate_level1", ItemMcbbsWikiChestplateLevel1::new);
@@ -50,6 +51,7 @@ public abstract class ItemRegistry {
     public static RegistryObject<Item> item_mcbbswiki_shovel_level1 = ITEMS.register("item_mcbbswiki_shovel_level1", ItemMcbbsWikiShovelLevel1::new);
     public static RegistryObject<Item> item_mcbbswiki_hoe_level1 = ITEMS.register("item_mcbbswiki_hoe_level1", ItemMcbbsWikiHoeLevel1::new);
     public static RegistryObject<Item> item_mcbbswiki_sword_level1 = ITEMS.register("item_mcbbswiki_sword_level1", ItemMcbbsWikiSwordLevel1::new);
-
     // mcbbs wiki things
+
+    public static RegistryObject<Item> item_mcbbswiki_lucky_block_piece = ITEMS.register("item_mcbbswiki_lucky_block_piece", ItemMcbbsWikiLuckyBlockPiece::new);
 }

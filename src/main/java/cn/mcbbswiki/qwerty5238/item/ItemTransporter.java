@@ -4,8 +4,6 @@ import cn.mcbbswiki.qwerty5238.registry.BlockRegistry;
 import cn.mcbbswiki.qwerty5238.registry.ModGroupRegistry;
 import cn.mcbbswiki.qwerty5238.util.CommonUtils;
 import cn.mcbbswiki.qwerty5238.util.GetWorld;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
@@ -29,14 +27,33 @@ public class ItemTransporter extends Item {
         super(new Properties().group(ModGroupRegistry.McbbsWikiGroup));
     }
 
+    private static boolean isPortal(World world, BlockPos pos){
+        int y = pos.getY();
+        for (int x = pos.getX() - 2; x <= pos.getX() + 2; x++){
+            for (int z = pos.getZ() - 2; z <= pos.getZ() + 2; z++){
+                if (x == pos.getX() && z == pos.getZ()){
+                    if (world.getBlockState(new BlockPos(x, y, z)).getBlock()
+                    != BlockRegistry.block_mcbbswiki.get()){
+                        return false;
+                    }
+                }
+                else {
+                    if (world.getBlockState(new BlockPos(x, y, z)).getBlock()
+                            != Blocks.OBSIDIAN){
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
     @Override
     @ParametersAreNonnullByDefault
     @Nonnull
     public ActionResultType onItemUse(ItemUseContext context) {
-        World world = context.getWorld();
+        World world;
         BlockPos blockpos = context.getPos();
-        BlockState blockstate = world.getBlockState(blockpos);
-        Block block = blockstate.getBlock();
         PlayerEntity playerentity = context.getPlayer();
         assert playerentity != null;
         MinecraftServer server = playerentity.getServer();
@@ -44,7 +61,7 @@ public class ItemTransporter extends Item {
         Vector3d t = playerentity.getPositionVec();
         world = playerentity.getEntityWorld();
         Vector2f pitchYaw = playerentity.getPitchYaw();
-        if (block == BlockRegistry.block_mcbbswiki.get()) {
+        if (isPortal(world, blockpos)) {
             world.playSound(playerentity, blockpos, SoundEvents.BLOCK_PORTAL_AMBIENT, SoundCategory.BLOCKS, 1.0F, 1.0F);
             if (playerentity.world.getDimensionKey() == World.OVERWORLD){
                 if(playerentity instanceof ServerPlayerEntity){
@@ -67,7 +84,7 @@ public class ItemTransporter extends Item {
                         }
                     }
                     CommonUtils.sendMsg(playerentity,"Teleported to MCBBS Wiki Normal Dimension");
-                    System.out.println(GetWorld.getServerWorlds(server));
+                    // System.out.println(GetWorld.getServerWorlds(server));
                     // System.out.println(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension").getDimensionKey().getLocation().toString());
                     // System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
                     return ActionResultType.SUCCESS;
@@ -105,7 +122,7 @@ public class ItemTransporter extends Item {
             }
         }
         else {
-            CommonUtils.sendMsg(playerentity,"You selected wrong block!");
+            CommonUtils.sendMsg(playerentity,"Not a valid portal!");
         }
         return ActionResultType.PASS;
     }

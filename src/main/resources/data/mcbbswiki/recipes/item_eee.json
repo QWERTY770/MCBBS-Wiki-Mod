@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mcbbswiki:item_stacked_eee"
+    }
+  ],
+  "result": {
+    "item": "mcbbswiki:item_eee",
+    "count": 9
+  }
+}

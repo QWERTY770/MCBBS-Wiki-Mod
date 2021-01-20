@@ -10,8 +10,6 @@ public class BlockQwerty5238 extends Block {
                 .hardnessAndResistance(30)
                 .harvestTool(ToolType.get("pickaxe"))
                 .harvestLevel(2)
-                .slipperiness(0.9F)
-                .speedFactor(2.0F)
-                .jumpFactor(2.0F));
+                .speedFactor(2.0F));
     }
 }
