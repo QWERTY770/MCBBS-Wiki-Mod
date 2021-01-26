@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "live=0,tick=0": { "model": "mcbbswiki:block/mysterious/block_mysterious_model_0" },
+    "live=1,tick=0": { "model": "mcbbswiki:block/mysterious/block_mysterious_model_1" },
+    "live=0,tick=1": { "model": "mcbbswiki:block/mysterious/block_mysterious_model_2" },
+    "live=1,tick=1": { "model": "mcbbswiki:block/mysterious/block_mysterious_model_3" }
+  }
+}

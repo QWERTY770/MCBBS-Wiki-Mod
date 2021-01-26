@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "mcbbswiki:block_mcbbswiki_ingot"
+      "item": "mcbbswiki:block_mcbbswiki"
     }
   ],
   "result": {

@@ -7,7 +7,7 @@ import net.minecraftforge.common.ToolType;
 public class BlockMcbbsWikiLuckyBlock extends Block {
     public BlockMcbbsWikiLuckyBlock(){
         super(Properties.create(Material.ROCK)
-                .hardnessAndResistance(50)
+                .hardnessAndResistance(20)
                 .harvestTool(ToolType.get("pickaxe"))
                 .harvestLevel(3));
     }

@@ -54,4 +54,6 @@ public abstract class ItemRegistry {
     // mcbbs wiki things
 
     public static RegistryObject<Item> item_mcbbswiki_lucky_block_piece = ITEMS.register("item_mcbbswiki_lucky_block_piece", ItemMcbbsWikiLuckyBlockPiece::new);
+    public static RegistryObject<Item> item_mysterious_switch = ITEMS.register("item_mysterious_switch", ItemMysteriousSwitch::new);
+    public static RegistryObject<Item> block_mysterious = ITEMS.register("block_mysterious", () -> new BlockItem(BlockRegistry.block_mysterious.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
 }

@@ -10,6 +10,6 @@ public class BlockSaltLovely extends Block {
                 .hardnessAndResistance(30)
                 .harvestTool(ToolType.get("pickaxe"))
                 .harvestLevel(2)
-                .slipperiness(0.95F));
+                .slipperiness(0.98F));
     }
 }

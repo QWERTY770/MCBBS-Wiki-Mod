@@ -1,6 +1,7 @@
 package cn.mcbbswiki.qwerty5238;
 
 import cn.mcbbswiki.qwerty5238.registry.*;
+import cn.mcbbswiki.qwerty5238.util.Unused;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -19,6 +20,7 @@ public class McbbsWiki {
         return new ResourceLocation(ID, name);
     }
 
+    @Unused
     public static String find(String name)
     {
         return ID + ":" + name;

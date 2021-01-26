@@ -38,5 +38,19 @@
 
   "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki Small Monster",
   "entity.mcbbswiki.entity_middle_mcbbswiki_monster": "MCBBS Wiki Middle Monster",
-  "entity.mcbbswiki.entity_large_mcbbswiki_monster": "MCBBS Wiki Large Monster"
+  "entity.mcbbswiki.entity_large_mcbbswiki_monster": "MCBBS Wiki Large Monster",
+
+  "block.mcbbswiki.block_mysterious": "Mysterious Block",
+  "item.mcbbswiki.item_mysterious_switch": "Mysterious Switch",
+
+  "message.mcbbswiki.teleport_to_normal_dim": "Teleported to MCBBS Wiki Normal Dimension",
+  "message.mcbbswiki.teleport_to_overworld_dim": "Teleported to Overworld Dimension",
+  "message.mcbbswiki.invalid_dim": "You are in a wrong dimension! Failed to teleport!",
+  "message.mcbbswiki.invalid_portal": "Invalid portal!",
+  "message.mcbbswiki.switch_scope_command_success": "Successfully set scope!",
+  "message.mcbbswiki.switch_scope_command_fail": "You are not holding Mysterious Switch item in your main hand!",
+  "message.mcbbswiki.switch_type_command_tick_success": "Successfully changed to \"tick\" mode!",
+  "message.mcbbswiki.switch_type_command_live_success": "Successfully changed to \"live\" mode!",
+  "message.mcbbswiki.switch_type_command_fail_1": "Wrong \"type\" argument!",
+  "message.mcbbswiki.switch_type_command_fail_2": "You are not holding Mysterious Switch item in your main hand!"
 }

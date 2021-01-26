@@ -1,7 +1,6 @@
 package cn.mcbbswiki.qwerty5238.world.biome;
 
 import cn.mcbbswiki.qwerty5238.registry.EntityRegistry;
-import cn.mcbbswiki.qwerty5238.registry.FeatureRegistry;
 import cn.mcbbswiki.qwerty5238.util.Unused;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
@@ -9,7 +8,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilders;

@@ -38,5 +38,19 @@
 
   "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki 小型怪物",
   "entity.mcbbswiki.entity_middle_mcbbswiki_monster": "MCBBS Wiki 中型怪物",
-  "entity.mcbbswiki.entity_large_mcbbswiki_monster": "MCBBS Wiki 大型怪物"
+  "entity.mcbbswiki.entity_large_mcbbswiki_monster": "MCBBS Wiki 大型怪物",
+
+  "block.mcbbswiki.block_mysterious": "神秘方块",
+  "item.mcbbswiki.item_mysterious_switch": "神秘开关",
+
+  "message.mcbbswiki.teleport_to_normal_dim": "传送到了MCBBS Wiki普通维度！",
+  "message.mcbbswiki.teleport_to_overworld_dim": "传送到了主世界维度！",
+  "message.mcbbswiki.invalid_dim": "你不在正确的维度里！传送失败！",
+  "message.mcbbswiki.invalid_portal": "无效传送门！",
+  "message.mcbbswiki.switch_scope_command_success": "成功设置范围！",
+  "message.mcbbswiki.switch_scope_command_fail": "你主手没有拿着神秘开关物品！",
+  "message.mcbbswiki.switch_type_command_tick_success": "成功转换到\"tick\"模式！",
+  "message.mcbbswiki.switch_type_command_live_success": "成功转换到\"live\"模式！",
+  "message.mcbbswiki.switch_type_command_fail_1": "错误的\"type\"参数！",
+  "message.mcbbswiki.switch_type_command_fail_2": "你主手没有拿着神秘开关物品！"
 }

@@ -52,23 +52,22 @@ public class ItemTransporter extends Item {
     @ParametersAreNonnullByDefault
     @Nonnull
     public ActionResultType onItemUse(ItemUseContext context) {
-        World world;
         BlockPos blockpos = context.getPos();
-        PlayerEntity playerentity = context.getPlayer();
-        assert playerentity != null;
-        MinecraftServer server = playerentity.getServer();
+        PlayerEntity playerEntity = context.getPlayer();
+        assert playerEntity != null;
+        MinecraftServer server = playerEntity.getServer();
         assert server != null;
-        Vector3d t = playerentity.getPositionVec();
-        world = playerentity.getEntityWorld();
-        Vector2f pitchYaw = playerentity.getPitchYaw();
+        Vector3d t = playerEntity.getPositionVec();
+        World world = playerEntity.getEntityWorld();
+        Vector2f pitchYaw = playerEntity.getPitchYaw();
         if (isPortal(world, blockpos)) {
-            world.playSound(playerentity, blockpos, SoundEvents.BLOCK_PORTAL_AMBIENT, SoundCategory.BLOCKS, 1.0F, 1.0F);
-            if (playerentity.world.getDimensionKey() == World.OVERWORLD){
-                if(playerentity instanceof ServerPlayerEntity){
-                    ((ServerPlayerEntity) playerentity).teleport(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
-                    int posX = (int)playerentity.getPosX();
-                    int posZ = (int)playerentity.getPosZ();
-                    world = playerentity.getEntityWorld();
+            world.playSound(playerEntity, blockpos, SoundEvents.BLOCK_PORTAL_AMBIENT, SoundCategory.BLOCKS, 1.0F, 1.0F);
+            if (playerEntity.world.getDimensionKey() == World.OVERWORLD){
+                if(playerEntity instanceof ServerPlayerEntity){
+                    ((ServerPlayerEntity) playerEntity).teleport(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
+                    int posX = (int)playerEntity.getPosX();
+                    int posZ = (int)playerEntity.getPosZ();
+                    world = playerEntity.getEntityWorld();
                     for (int h = 255; h > 0; h--){
                         Material m = world.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
                         if (m != Material.AIR){
@@ -79,23 +78,23 @@ public class ItemTransporter extends Item {
                                     }
                                 }
                             }
-                            playerentity.setPosition(posX, h + 2, posZ);
+                            playerEntity.setPosition(posX, h + 2, posZ);
                             break;
                         }
                     }
-                    CommonUtils.sendMsg(playerentity,"Teleported to MCBBS Wiki Normal Dimension");
+                    CommonUtils.sendMsg(playerEntity,"message.mcbbswiki.teleport_to_normal_dim");
                     // System.out.println(GetWorld.getServerWorlds(server));
                     // System.out.println(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension").getDimensionKey().getLocation().toString());
                     // System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
                     return ActionResultType.SUCCESS;
                 }
             }
-            else if (playerentity.world.getDimensionKey().getLocation().toString().equals("mcbbswiki:mcbbswiki_normal_dimension")){
-                if(playerentity instanceof ServerPlayerEntity){
-                    ((ServerPlayerEntity) playerentity).teleport(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
-                    int posX = (int)playerentity.getPosX();
-                    int posZ = (int)playerentity.getPosZ();
-                    world = playerentity.getEntityWorld();
+            else if (playerEntity.world.getDimensionKey().getLocation().toString().equals("mcbbswiki:mcbbswiki_normal_dimension")){
+                if(playerEntity instanceof ServerPlayerEntity){
+                    ((ServerPlayerEntity) playerEntity).teleport(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
+                    int posX = (int)playerEntity.getPosX();
+                    int posZ = (int)playerEntity.getPosZ();
+                    world = playerEntity.getEntityWorld();
                     for (int h = 255; h > 0; h--){
                         Material m = world.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
                         if (m != Material.AIR){
@@ -106,11 +105,11 @@ public class ItemTransporter extends Item {
                                     }
                                 }
                             }
-                            playerentity.setPosition(posX, h, posZ);
+                            playerEntity.setPosition(posX, h, posZ);
                             break;
                         }
                     }
-                    CommonUtils.sendMsg(playerentity,"Teleported to Overworld Dimension");
+                    CommonUtils.sendMsg(playerEntity,"message.mcbbswiki.teleport_to_overworld_dim");
                     // System.out.println(GetWorld.getServerWorlds(server));
                     // System.out.println(GetWorld.getWorldFromServer(server, "minecraft:overworld").getDimensionKey().getLocation().toString());
                     // System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
@@ -118,11 +117,11 @@ public class ItemTransporter extends Item {
                 }
             }
             else {
-                CommonUtils.sendMsg(playerentity,"You are in " + playerentity.world.getDimensionKey().getLocation().toString() + " dimension! Cannot teleport!");
+                CommonUtils.sendMsg(playerEntity,"message.mcbbswiki.invalid_dim");
             }
         }
         else {
-            CommonUtils.sendMsg(playerentity,"Not a valid portal!");
+            CommonUtils.sendMsg(playerEntity,"message.mcbbswiki.invalid_portal");
         }
         return ActionResultType.PASS;
     }
