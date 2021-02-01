@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ttt",
+    "tdt",
+    "tit"
+  ],
+  "key": {
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "t": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:item_small_mcbbswiki_monster_spawn_egg",
+    "count": 1
+  }
+}

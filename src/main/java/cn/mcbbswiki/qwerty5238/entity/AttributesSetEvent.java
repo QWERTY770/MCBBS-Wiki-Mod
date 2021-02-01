@@ -1,5 +1,6 @@
 package cn.mcbbswiki.qwerty5238.entity;
 
+import cn.mcbbswiki.qwerty5238.McbbsWiki;
 import cn.mcbbswiki.qwerty5238.registry.EntityRegistry;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.Attributes;
@@ -8,7 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = McbbsWiki.ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AttributesSetEvent {
     @SubscribeEvent
     public static void setupAttributes(FMLCommonSetupEvent event) {

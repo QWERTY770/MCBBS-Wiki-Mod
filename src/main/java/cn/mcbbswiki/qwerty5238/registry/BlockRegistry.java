@@ -33,4 +33,5 @@ public abstract class BlockRegistry {
     public static RegistryObject<Block> block_mcbbswiki = BLOCKS.register("block_mcbbswiki", BlockMcbbsWiki::new);
     public static RegistryObject<Block> block_mcbbswiki_lucky_block = BLOCKS.register("block_mcbbswiki_lucky_block", BlockMcbbsWikiLuckyBlock::new);
     public static RegistryObject<Block> block_mysterious = BLOCKS.register("block_mysterious", BlockMysterious::new);
+    // others
 }

@@ -1,10 +1,9 @@
 package cn.mcbbswiki.qwerty5238;
 
-import cn.mcbbswiki.qwerty5238.registry.*;
+import cn.mcbbswiki.qwerty5238.registry.RegistryHandler;
 import cn.mcbbswiki.qwerty5238.util.Unused;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,12 +13,13 @@ import org.apache.logging.log4j.Logger;
 @Mod(McbbsWiki.ID)
 public class McbbsWiki {
     public static final String ID = "mcbbswiki";
+    @Unused
     public static final Logger LOGGER = LogManager.getLogger();
+    @Unused
     public static ResourceLocation locate(String name)
     {
         return new ResourceLocation(ID, name);
     }
-
     @Unused
     public static String find(String name)
     {
@@ -27,20 +27,6 @@ public class McbbsWiki {
     }
 
     public McbbsWiki(){
-        BlockRegistry.BLOCKS.register(
-                FMLJavaModLoadingContext.get().getModEventBus()
-        );
-        ItemRegistry.ITEMS.register(
-                FMLJavaModLoadingContext.get().getModEventBus()
-        );
-        EntityRegistry.ENTITY_TYPES.register(
-                FMLJavaModLoadingContext.get().getModEventBus()
-        );
-        FeatureRegistry.FEATURES.register(
-                FMLJavaModLoadingContext.get().getModEventBus()
-        );
-        BiomeRegistry.BIOMES.register(
-                FMLJavaModLoadingContext.get().getModEventBus()
-        );
+        RegistryHandler.register();
     }
 }

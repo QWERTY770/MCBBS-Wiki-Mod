@@ -43,6 +43,10 @@
   "block.mcbbswiki.block_mysterious": "Mysterious Block",
   "item.mcbbswiki.item_mysterious_switch": "Mysterious Switch",
 
+  "item.mcbbswiki.item_small_mcbbswiki_monster_spawn_egg": "MCBBS Wiki Small Monster Spawn Egg",
+  "item.mcbbswiki.item_middle_mcbbswiki_monster_spawn_egg": "MCBBS Wiki Middle Monster Spawn Egg",
+  "item.mcbbswiki.item_large_mcbbswiki_monster_spawn_egg": "MCBBS Wiki Large Monster Spawn Egg",
+
   "message.mcbbswiki.teleport_to_normal_dim": "Teleported to MCBBS Wiki Normal Dimension",
   "message.mcbbswiki.teleport_to_overworld_dim": "Teleported to Overworld Dimension",
   "message.mcbbswiki.invalid_dim": "You are in a wrong dimension! Failed to teleport!",
