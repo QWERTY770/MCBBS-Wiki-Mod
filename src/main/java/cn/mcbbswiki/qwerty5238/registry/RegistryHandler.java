@@ -1,7 +1,7 @@
 package cn.mcbbswiki.qwerty5238.registry;
 
 import cn.mcbbswiki.qwerty5238.McbbsWiki;
-import cn.mcbbswiki.qwerty5238.item.CustomSpawnEggItem;
+import cn.mcbbswiki.qwerty5238.item.technical.CustomSpawnEggItem;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;

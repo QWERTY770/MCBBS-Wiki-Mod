@@ -4,14 +4,13 @@ license="GNU General Public License v3.0"
 issueTrackerURL="https://github.com/QWERTY770/MCBBS-Wiki-Mod/issues"
 [[mods]]
 modId="mcbbswiki"
-version="0.7"
+version="0.8b1"
 displayName="MCBBS Wiki"
 displayURL="https://github.com/QWERTY770/MCBBS-Wiki-Mod"
 logoFile="mcbbswiki.png"
 credits="QWERTY_52_38"
 authors="QWERTY_52_38"
-description='''
-
+description='''https://www.mcmod.cn/class/3343.html
 '''
 [[dependencies.mcbbswiki]]
     modId="forge"

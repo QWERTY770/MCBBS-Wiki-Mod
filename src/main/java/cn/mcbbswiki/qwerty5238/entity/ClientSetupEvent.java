@@ -3,6 +3,7 @@ package cn.mcbbswiki.qwerty5238.entity;
 import cn.mcbbswiki.qwerty5238.McbbsWiki;
 import cn.mcbbswiki.qwerty5238.entity.render.LargeMcbbsWikiMonsterRender;
 import cn.mcbbswiki.qwerty5238.entity.render.MiddleMcbbsWikiMonsterRender;
+import cn.mcbbswiki.qwerty5238.entity.render.RayOfSunshineRender;
 import cn.mcbbswiki.qwerty5238.entity.render.SmallMcbbsWikiMonsterRender;
 import cn.mcbbswiki.qwerty5238.registry.EntityRegistry;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -19,6 +20,7 @@ public class ClientSetupEvent {
         RenderingRegistry.registerEntityRenderingHandler(EntityRegistry.entity_small_mcbbswiki_monster.get(), (EntityRendererManager manager) -> new SmallMcbbsWikiMonsterRender(manager));
         RenderingRegistry.registerEntityRenderingHandler(EntityRegistry.entity_middle_mcbbswiki_monster.get(), (EntityRendererManager manager) -> new MiddleMcbbsWikiMonsterRender(manager));
         RenderingRegistry.registerEntityRenderingHandler(EntityRegistry.entity_large_mcbbswiki_monster.get(), (EntityRendererManager manager) -> new LargeMcbbsWikiMonsterRender(manager));
+        RenderingRegistry.registerEntityRenderingHandler(EntityRegistry.entity_ray_of_sunshine.get(), (EntityRendererManager manager) -> new RayOfSunshineRender(manager));
     }
 }
 

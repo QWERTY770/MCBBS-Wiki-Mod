@@ -1,6 +1,6 @@
 package cn.mcbbswiki.qwerty5238.entity.model;
 
-import cn.mcbbswiki.qwerty5238.entity.LargeMcbbsWikiMonsterEntity;
+import cn.mcbbswiki.qwerty5238.entity.RayOfSunshineEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.entity.model.EntityModel;
@@ -8,20 +8,20 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class LargeMcbbsWikiMonsterModel extends EntityModel<LargeMcbbsWikiMonsterEntity> {
+public class RayOfSunshineModel extends EntityModel<RayOfSunshineEntity> {
     private final ModelRenderer body;
 
-    public LargeMcbbsWikiMonsterModel() {
-        textureWidth = 128;
-        textureHeight = 128;
+    public RayOfSunshineModel() {
+        textureWidth = 192;
+        textureHeight = 192;
 
         body = new ModelRenderer(this, 0, 0);
-        body.addBox(-16.0F, -16.0F, 0.0F, 32.0F, 16.0F, 32.0F);
+        body.addBox(-16.0F, -16.0F, -16.0F, 48.0F, 48.0F, 48.0F);
     }
 
     @Override
     @ParametersAreNonnullByDefault
-    public void setRotationAngles(LargeMcbbsWikiMonsterEntity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+    public void setRotationAngles(RayOfSunshineEntity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 
     }
 

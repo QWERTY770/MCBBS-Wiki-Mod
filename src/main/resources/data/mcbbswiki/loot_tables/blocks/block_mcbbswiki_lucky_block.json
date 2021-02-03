@@ -63,6 +63,16 @@
           "type": "minecraft:item",
           "name": "mcbbswiki:block_mcbbswiki_lucky_block",
           "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mcbbswiki:block_mysterious",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mcbbswiki:item_mysterious_switch",
+          "weight": 2
         }
       ]
     },

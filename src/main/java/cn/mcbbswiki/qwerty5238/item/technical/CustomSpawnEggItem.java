@@ -1,7 +1,7 @@
 // Code source:com.hungteen.pvz.item.PVZSpawnEggItem
 // View at https://github.com/HungTeen/pvzmod/blob/dev/src/main/java/com/hungteen/pvz/item/PVZSpawnEggItem.java
 
-package cn.mcbbswiki.qwerty5238.item;
+package cn.mcbbswiki.qwerty5238.item.technical;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class CustomSpawnEggItem extends SpawnEggItem {
 
     public CustomSpawnEggItem(final RegistryObject<? extends EntityType<?>> entityTypeSupplier, int primaryColorIn, int secondaryColorIn, Properties builder) {
         super(null, primaryColorIn, secondaryColorIn, builder);
-        this.entityTypeSupplier=Lazy.of(entityTypeSupplier::get);
+        this.entityTypeSupplier=Lazy.of(entityTypeSupplier);
         CUSTOM_EGGS.add(this);
     }
 

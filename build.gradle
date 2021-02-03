@@ -15,7 +15,7 @@ apply plugin: 'com.otakusaikou.fgcn'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0'
+version = '0.8b1'
 group = 'com.mcbbswiki.qwerty5238' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'mcbbswiki'
 
@@ -124,7 +124,7 @@ jar {
         attributes([
             "Specification-Title": "mcbbswiki",
             "Specification-Vendor": "mcbbswiki",
-            "Specification-Version": "0.2", // We are version 1 of ourselves
+            "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
             "Implementation-Vendor" :"mcbbswiki",

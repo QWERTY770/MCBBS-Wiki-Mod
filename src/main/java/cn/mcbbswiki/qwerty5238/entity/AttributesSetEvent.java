@@ -37,6 +37,14 @@ public class AttributesSetEvent {
                     .createMutableAttribute(Attributes.ATTACK_DAMAGE, 7.0D)
                     .create());
         });
+        event.enqueueWork(() -> {
+            GlobalEntityTypeAttributes.put(EntityRegistry.entity_ray_of_sunshine.get(), MobEntity.func_233666_p_()
+                    .createMutableAttribute(Attributes.MAX_HEALTH, 300.0D)
+                    .createMutableAttribute(Attributes.ARMOR, 8.0D)
+                    .createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.5D)
+                    .createMutableAttribute(Attributes.ATTACK_DAMAGE, 17.0D)
+                    .create());
+        });
     }
 }
 

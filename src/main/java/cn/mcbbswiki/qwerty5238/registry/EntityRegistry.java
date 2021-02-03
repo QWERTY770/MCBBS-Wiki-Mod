@@ -3,6 +3,7 @@ package cn.mcbbswiki.qwerty5238.registry;
 import cn.mcbbswiki.qwerty5238.McbbsWiki;
 import cn.mcbbswiki.qwerty5238.entity.LargeMcbbsWikiMonsterEntity;
 import cn.mcbbswiki.qwerty5238.entity.MiddleMcbbsWikiMonsterEntity;
+import cn.mcbbswiki.qwerty5238.entity.RayOfSunshineEntity;
 import cn.mcbbswiki.qwerty5238.entity.SmallMcbbsWikiMonsterEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
@@ -18,4 +19,6 @@ public abstract class EntityRegistry {
             () -> EntityType.Builder.create(MiddleMcbbsWikiMonsterEntity::new, EntityClassification.MISC).size(1.5F, 0.75F).build("mcbbswiki:entity_middle_mcbbswiki_monster"));
     public static final RegistryObject<EntityType<LargeMcbbsWikiMonsterEntity>> entity_large_mcbbswiki_monster = ENTITY_TYPES.register("entity_large_mcbbswiki_monster",
             () -> EntityType.Builder.create(LargeMcbbsWikiMonsterEntity::new, EntityClassification.MISC).size(2F, 1F).build("mcbbswiki:entity_large_mcbbswiki_monster"));
+    public static final RegistryObject<EntityType<RayOfSunshineEntity>> entity_ray_of_sunshine = ENTITY_TYPES.register("entity_ray_of_sunshine",
+            () -> EntityType.Builder.create(RayOfSunshineEntity::new, EntityClassification.MISC).immuneToFire().size(3F, 3F).build("mcbbswiki:entity_ray_of_sunshine"));
 }
