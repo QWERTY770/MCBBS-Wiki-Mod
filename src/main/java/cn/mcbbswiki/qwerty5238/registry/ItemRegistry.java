@@ -63,6 +63,7 @@ public abstract class ItemRegistry {
     public static final RegistryObject<CustomSpawnEggItem> item_small_mcbbswiki_monster_spawn_egg = registerSpawnEgg("item_small_mcbbswiki_monster", EntityRegistry.entity_small_mcbbswiki_monster, 0x7bd4ff, 0xff8784);
     public static final RegistryObject<CustomSpawnEggItem> item_middle_mcbbswiki_monster_spawn_egg = registerSpawnEgg("item_middle_mcbbswiki_monster", EntityRegistry.entity_middle_mcbbswiki_monster, 0x6bc4ef, 0xef7774);
     public static final RegistryObject<CustomSpawnEggItem> item_large_mcbbswiki_monster_spawn_egg = registerSpawnEgg("item_large_mcbbswiki_monster", EntityRegistry.entity_large_mcbbswiki_monster, 0x5bb4df, 0xdf6764);
+    public static final RegistryObject<CustomSpawnEggItem> item_ray_of_sunshine_spawn_egg = registerSpawnEgg("item_ray_of_sunshine", EntityRegistry.entity_ray_of_sunshine, 0x66ccff, 0xff3300);
 
     /**
      * register spawn eggs

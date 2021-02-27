@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcbbswiki:item_eee"
+    },
+    "title": {
+      "translate": "advancements.mcbbswiki.eee.title"
+    },
+    "description": {
+      "translate": "advancements.mcbbswiki.eee.description"
+    },
+    "frame": "task"
+  },
+  "parent": "mcbbswiki:ingot",
+  "criteria": {
+    "eee": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_eee"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 30
+  }
+}

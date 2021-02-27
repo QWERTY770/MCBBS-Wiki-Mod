@@ -1,0 +1,55 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcbbswiki:item_small_mcbbswiki_monster_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.mcbbswiki.monster_spawn_egg.title"
+    },
+    "description": {
+      "translate": "advancements.mcbbswiki.monster_spawn_egg.description"
+    },
+    "frame": "task"
+  },
+  "parent": "mcbbswiki:ingot",
+  "criteria": {
+    "egg_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_small_mcbbswiki_monster_spawn_egg"
+          }
+        ]
+      }
+    },
+    "egg_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_middle_mcbbswiki_monster_spawn_egg"
+          }
+        ]
+      }
+    },
+    "egg_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_large_mcbbswiki_monster_spawn_egg"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "block_mcbbswiki_lucky_block"
+    ],
+    "loot": [
+      "mcbbswiki:blocks/block_mcbbswiki_lucky_block"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:advancement_reward",
+  "pools": [
+    {
+      "rolls": 7,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mcbbswiki:item_mcbbswiki_ingot"
+        }
+      ]
+    }
+  ]
+}

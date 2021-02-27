@@ -47,6 +47,7 @@
   "item.mcbbswiki.item_small_mcbbswiki_monster_spawn_egg": "MCBBS Wiki Small Monster Spawn Egg",
   "item.mcbbswiki.item_middle_mcbbswiki_monster_spawn_egg": "MCBBS Wiki Middle Monster Spawn Egg",
   "item.mcbbswiki.item_large_mcbbswiki_monster_spawn_egg": "MCBBS Wiki Large Monster Spawn Egg",
+  "item.mcbbswiki.item_ray_of_sunshine_spawn_egg": "Ray Of Sunshine Spawn Egg",
 
   "message.mcbbswiki.teleport_to_normal_dim": "Teleported to MCBBS Wiki Normal Dimension",
   "message.mcbbswiki.teleport_to_overworld_dim": "Teleported to Overworld Dimension",
@@ -57,5 +58,22 @@
   "message.mcbbswiki.switch_type_command_tick_success": "Successfully changed to \"tick\" mode!",
   "message.mcbbswiki.switch_type_command_live_success": "Successfully changed to \"live\" mode!",
   "message.mcbbswiki.switch_type_command_fail_1": "Wrong \"type\" argument!",
-  "message.mcbbswiki.switch_type_command_fail_2": "You are not holding Mysterious Switch item in your main hand!"
+  "message.mcbbswiki.switch_type_command_fail_2": "You are not holding Mysterious Switch item in your main hand!",
+
+  "advancements.mcbbswiki.armor_level1.title": "Level 1 Armor!",
+  "advancements.mcbbswiki.armor_level1.description": "Get all MCBBS Wiki level 1 armor.",
+  "advancements.mcbbswiki.base_ore.title": "Strange ore!",
+  "advancements.mcbbswiki.base_ore.description": "Get MCBBS Wiki base ore.",
+  "advancements.mcbbswiki.eee.title": "EEE……",
+  "advancements.mcbbswiki.eee.description": "Kill chickens in water to get eee.",
+  "advancements.mcbbswiki.ingot.title": "Burning base ores.",
+  "advancements.mcbbswiki.ingot.description": "firing mcbbswiki basic ore.",
+  "advancements.mcbbswiki.monster_spawn_egg.title": "3 eggs!",
+  "advancements.mcbbswiki.monster_spawn_egg.description": "Get three kinds of monster eggs",
+  "advancements.mcbbswiki.normal_dimension.title": "Open a new dimension!",
+  "advancements.mcbbswiki.normal_dimension.description": "Enter MCBBS Wiki normal dimension",
+  "advancements.mcbbswiki.sword_eee.title": "Kill with eee.",
+  "advancements.mcbbswiki.sword_eee.description": "Synthesize eee sword.",
+  "advancements.mcbbswiki.tools_level1.title": "Level 1 tool!",
+  "advancements.mcbbswiki.tools_level1.description": "Get all MCBBS Wiki level 1 tools."
 }

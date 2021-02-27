@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcbbswiki:item_sword_eee"
+    },
+    "title": {
+      "translate": "advancements.mcbbswiki.sword_eee.title"
+    },
+    "description": {
+      "translate": "advancements.mcbbswiki.sword_eee.description"
+    },
+    "frame": "challenge"
+  },
+  "parent": "mcbbswiki:eee",
+  "criteria": {
+    "sword_eee": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_sword_eee"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

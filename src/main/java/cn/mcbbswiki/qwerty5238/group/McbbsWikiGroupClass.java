@@ -15,6 +15,6 @@ public class McbbsWikiGroupClass extends ItemGroup {
     }
     @Override @Nonnull
     public ItemStack createIcon(){
-        return new ItemStack(ItemRegistry.block_qwerty5238.get());
+        return new ItemStack(ItemRegistry.item_mcbbswiki_ingot.get());
     }
 }

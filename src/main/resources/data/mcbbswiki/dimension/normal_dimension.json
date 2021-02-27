@@ -1,5 +1,5 @@
 {
-  "type": "mcbbswiki:mcbbswiki_normal_dimension",
+  "type": "mcbbswiki:normal_dimension",
   "generator": {
     "type": "minecraft:noise",
     "seed": 0,

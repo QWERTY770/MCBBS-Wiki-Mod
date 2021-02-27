@@ -1,0 +1,63 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcbbswiki:item_mcbbswiki_chestplate_level1"
+    },
+    "title": {
+      "translate": "advancements.mcbbswiki.armor_level1.title"
+    },
+    "description": {
+      "translate": "advancements.mcbbswiki.armor_level1.description"
+    },
+    "frame": "goal"
+  },
+  "parent": "mcbbswiki:ingot",
+  "criteria": {
+    "armor_level1_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_helmet_level1"
+          }
+        ]
+      }
+    },
+    "armor_level1_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_chestplate_level1"
+          }
+        ]
+      }
+    },
+    "armor_level1_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_leggings_level1"
+          }
+        ]
+      }
+    },
+    "armor_level1_4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_boots_level1"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "mcbbswiki:advancements/tools_level1"
+    ],
+    "experience": 100
+  }
+}

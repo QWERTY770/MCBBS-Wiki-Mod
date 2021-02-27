@@ -1,0 +1,73 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcbbswiki:item_mcbbswiki_pickaxe_level1"
+    },
+    "title": {
+      "translate": "advancements.mcbbswiki.tools_level1.title"
+    },
+    "description": {
+      "translate": "advancements.mcbbswiki.tools_level1.description"
+    },
+    "frame": "goal"
+  },
+  "parent": "mcbbswiki:ingot",
+  "criteria": {
+    "tools_level1_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_sword_level1"
+          }
+        ]
+      }
+    },
+    "tools_level1_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_shovel_level1"
+          }
+        ]
+      }
+    },
+    "tools_level1_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_hoe_level1"
+          }
+        ]
+      }
+    },
+    "tools_level1_4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_axe_level1"
+          }
+        ]
+      }
+    },
+    "tools_level1_5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_pickaxe_level1"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "mcbbswiki:advancements/tools_level1"
+    ],
+    "experience": 100
+  }
+}

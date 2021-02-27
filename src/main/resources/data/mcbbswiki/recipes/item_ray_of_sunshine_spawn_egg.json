@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bmb",
+    "swl",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "mcbbswiki:block_mysterious"
+    },
+    "s": {
+      "item": "mcbbswiki:item_small_mcbbswiki_monster_spawn_egg"
+    },
+    "m": {
+      "item": "mcbbswiki:item_middle_mcbbswiki_monster_spawn_egg"
+    },
+    "l": {
+      "item": "mcbbswiki:item_large_mcbbswiki_monster_spawn_egg"
+    },
+    "w": {
+      "item": "mcbbswiki:item_mysterious_switch"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:item_ray_of_sunshine_spawn_egg",
+    "count": 2
+  }
+}

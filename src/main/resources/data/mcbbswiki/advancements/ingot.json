@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcbbswiki:item_mcbbswiki_ingot"
+    },
+    "title": {
+      "translate": "advancements.mcbbswiki.ingot.title"
+    },
+    "description": {
+      "translate": "advancements.mcbbswiki.ingot.description"
+    },
+    "frame": "task"
+  },
+  "parent": "mcbbswiki:base_ore",
+  "criteria": {
+    "ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:item_mcbbswiki_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "mcbbswiki:item_transporter",
+      "mcbbswiki:item_sword_eee",
+      "mcbbswiki:item_stacked_eee",
+      "mcbbswiki:block_mcbbswiki",
+      "mcbbswiki:item_mcbbswiki_helmet_level1",
+      "mcbbswiki:item_mcbbswiki_chestplate_level1",
+      "mcbbswiki:item_mcbbswiki_leggings_level1",
+      "mcbbswiki:item_mcbbswiki_boots_level1",
+      "mcbbswiki:item_mcbbswiki_sword_level1",
+      "mcbbswiki:item_mcbbswiki_shovel_level1",
+      "mcbbswiki:item_mcbbswiki_hoe_level1",
+      "mcbbswiki:item_mcbbswiki_axe_level1",
+      "mcbbswiki:item_mcbbswiki_pickaxe_level1",
+      "mcbbswiki:item_small_mcbbswiki_monster_spawn_egg",
+      "mcbbswiki:item_middle_mcbbswiki_monster_spawn_egg",
+      "mcbbswiki:item_large_mcbbswiki_monster_spawn_egg"
+    ]
+  }
+}

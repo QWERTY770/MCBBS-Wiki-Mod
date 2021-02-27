@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcbbswiki:item_transporter"
+    },
+    "title": {
+      "translate": "advancements.mcbbswiki.normal_dimension.title"
+    },
+    "description": {
+      "translate": "advancements.mcbbswiki.normal_dimension.description"
+    },
+    "frame": "task"
+  },
+  "parent": "mcbbswiki:ingot",
+  "criteria": {
+    "normal_dimension": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "mcbbswiki:normal_dimension"
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "mcbbswiki:advancements/tools_level1"
+    ]
+  }
+}

@@ -47,6 +47,7 @@
   "item.mcbbswiki.item_small_mcbbswiki_monster_spawn_egg": "MCBBS Wiki 小型怪物 刷怪蛋",
   "item.mcbbswiki.item_middle_mcbbswiki_monster_spawn_egg": "MCBBS Wiki 中型怪物 刷怪蛋",
   "item.mcbbswiki.item_large_mcbbswiki_monster_spawn_egg": "MCBBS Wiki 大型怪物 刷怪蛋",
+  "item.mcbbswiki.item_ray_of_sunshine_spawn_egg": "一道阳光 刷怪蛋",
 
   "message.mcbbswiki.teleport_to_normal_dim": "传送到了MCBBS Wiki普通维度！",
   "message.mcbbswiki.teleport_to_overworld_dim": "传送到了主世界维度！",
@@ -57,5 +58,22 @@
   "message.mcbbswiki.switch_type_command_tick_success": "成功转换到\"tick\"模式！",
   "message.mcbbswiki.switch_type_command_live_success": "成功转换到\"live\"模式！",
   "message.mcbbswiki.switch_type_command_fail_1": "错误的\"type\"参数！",
-  "message.mcbbswiki.switch_type_command_fail_2": "你主手没有拿着神秘开关物品！"
+  "message.mcbbswiki.switch_type_command_fail_2": "你主手没有拿着神秘开关物品！",
+
+  "advancements.mcbbswiki.armor_level1.title": "1级装备！",
+  "advancements.mcbbswiki.armor_level1.description": "获得所有MCBBS Wiki1级装备。",
+  "advancements.mcbbswiki.base_ore.title": "奇怪的矿石！",
+  "advancements.mcbbswiki.base_ore.description": "获取MCBBS Wiki基础矿石。",
+  "advancements.mcbbswiki.eee.title": "EEE……",
+  "advancements.mcbbswiki.eee.description": "在水中杀死鸡获得EEE。",
+  "advancements.mcbbswiki.ingot.title": "烧基础矿。",
+  "advancements.mcbbswiki.ingot.description": "烧制MCBBS Wiki基础矿石。",
+  "advancements.mcbbswiki.normal_dimension.title": "开启新维度！",
+  "advancements.mcbbswiki.normal_dimension.description": "进入MCBBS Wiki基础维度",
+  "advancements.mcbbswiki.sword_eee.title": "用EEE击杀。",
+  "advancements.mcbbswiki.sword_eee.description": "合成EEE剑。",
+  "advancements.mcbbswiki.tools_level1.title": "1级工具！",
+  "advancements.mcbbswiki.tools_level1.description": "获得所有MCBBS Wiki1级工具。",
+  "advancements.mcbbswiki.monster_spawn_egg.title": "3个蛋！",
+  "advancements.mcbbswiki.monster_spawn_egg.description": "获取3种怪物蛋、"
 }

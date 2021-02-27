@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcbbswiki:block_mcbbswiki_base_ore"
+    },
+    "title": {
+      "translate": "advancements.mcbbswiki.base_ore.title"
+    },
+    "description": {
+      "translate": "advancements.mcbbswiki.base_ore.description"
+    },
+    "frame": "task",
+    "background": "mcbbswiki:mcbbswiki.png"
+  },
+  "criteria": {
+    "base_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "mcbbswiki:block_mcbbswiki_base_ore"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "mcbbswiki:item_mcbbswiki_ingot",
+      "mcbbswiki:block_mcbbswiki"
+    ]
+  }
+}
