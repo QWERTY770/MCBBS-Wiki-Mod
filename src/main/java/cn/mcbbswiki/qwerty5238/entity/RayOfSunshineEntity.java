@@ -1,6 +1,7 @@
 package cn.mcbbswiki.qwerty5238.entity;
 
 import cn.mcbbswiki.qwerty5238.entity.api.BossEntity;
+import cn.mcbbswiki.qwerty5238.registry.EntityRegistry;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -96,6 +97,24 @@ public class RayOfSunshineEntity extends BossEntity {
             if (livingentity.getDistanceSq(this.parentEntity) < 4096.0D && this.parentEntity.canEntityBeSeen(livingentity)) {
                 World world = this.parentEntity.world;
                 ++this.attackTimer;
+                if (world.rand.nextDouble() < 0.2 && this.parentEntity.getHealth() < 150){
+                    double d = world.rand.nextDouble();
+                    if (d < 1.0/3){
+                        SmallMcbbsWikiMonsterEntity entity = new SmallMcbbsWikiMonsterEntity(EntityRegistry.entity_small_mcbbswiki_monster.get(), world);
+                        entity.setPosition(this.parentEntity.getPosX() + 4, this.parentEntity.getPosY(), this.parentEntity.getPosZ() + 4);
+                        world.addEntity(entity);
+                    }
+                    else if (d < 2.0/3){
+                        MiddleMcbbsWikiMonsterEntity entity = new MiddleMcbbsWikiMonsterEntity(EntityRegistry.entity_middle_mcbbswiki_monster.get(), world);
+                        entity.setPosition(this.parentEntity.getPosX() + 4, this.parentEntity.getPosY(), this.parentEntity.getPosZ() + 4);
+                        world.addEntity(entity);
+                    }
+                    else {
+                        LargeMcbbsWikiMonsterEntity entity = new LargeMcbbsWikiMonsterEntity(EntityRegistry.entity_large_mcbbswiki_monster.get(), world);
+                        entity.setPosition(this.parentEntity.getPosX() + 4, this.parentEntity.getPosY(), this.parentEntity.getPosZ() + 4);
+                        world.addEntity(entity);
+                    }
+                }
                 if (this.attackTimer == 10 && !this.parentEntity.isSilent()) {
                     world.playEvent(null, 1015, this.parentEntity.getPosition(), 0);
                 }
