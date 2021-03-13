@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+    "pbp",
+    "pip"
+  ],
+  "key": {
+    "p": {
+      "item": "mcbbswiki:item_mysterious_ingot_piece"
+    },
+    "b": {
+      "item": "mcbbswiki:block_mcbbswiki"
+    },
+    "i": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "mcbbswiki:item_mysterious_ingot",
+    "count": 1
+  }
+}

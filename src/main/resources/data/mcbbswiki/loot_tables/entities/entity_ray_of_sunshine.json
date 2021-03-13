@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mcbbswiki:item_mysterious_ingot_piece",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:item_mysterious_ingot",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_looting",
+              "chance": 0.05,
+              "looting_multiplier": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mcbbswiki:item_mcbbswiki_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 5,
+        "max": 7
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "mcbbswiki:blocks/block_mcbbswiki_lucky_block"
+        }
+      ]
+    }
+  ]
+}
