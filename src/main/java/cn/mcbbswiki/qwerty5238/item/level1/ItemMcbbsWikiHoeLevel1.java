@@ -1,4 +1,4 @@
-package cn.mcbbswiki.qwerty5238.item;
+package cn.mcbbswiki.qwerty5238.item.level1;
 
 import cn.mcbbswiki.qwerty5238.registry.ModGroupRegistry;
 import cn.mcbbswiki.qwerty5238.tooltype.McbbsWikiTierLevel1;

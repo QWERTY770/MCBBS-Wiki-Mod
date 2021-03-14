@@ -1,6 +1,7 @@
 package cn.mcbbswiki.qwerty5238.registry;
 
 import cn.mcbbswiki.qwerty5238.item.*;
+import cn.mcbbswiki.qwerty5238.item.level1.*;
 import cn.mcbbswiki.qwerty5238.item.technical.CustomSpawnEggItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
