@@ -2,6 +2,7 @@ package cn.mcbbswiki.qwerty5238.registry;
 
 import cn.mcbbswiki.qwerty5238.item.*;
 import cn.mcbbswiki.qwerty5238.item.level1.*;
+import cn.mcbbswiki.qwerty5238.item.level2.*;
 import cn.mcbbswiki.qwerty5238.item.technical.CustomSpawnEggItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
@@ -56,6 +57,18 @@ public abstract class ItemRegistry {
     public static final RegistryObject<Item> item_mcbbswiki_hoe_level1 = ITEMS.register("item_mcbbswiki_hoe_level1", ItemMcbbsWikiHoeLevel1::new);
     public static final RegistryObject<Item> item_mcbbswiki_sword_level1 = ITEMS.register("item_mcbbswiki_sword_level1", ItemMcbbsWikiSwordLevel1::new);
     // mcbbs wiki things level 1
+
+    public static final RegistryObject<Item> item_mcbbswiki_helmet_level2 = ITEMS.register("item_mcbbswiki_helmet_level2", ItemMcbbsWikiHelmetLevel2::new);
+    public static final RegistryObject<Item> item_mcbbswiki_chestplate_level2 = ITEMS.register("item_mcbbswiki_chestplate_level2", ItemMcbbsWikiChestplateLevel2::new);
+    public static final RegistryObject<Item> item_mcbbswiki_leggings_level2 = ITEMS.register("item_mcbbswiki_leggings_level2", ItemMcbbsWikiLeggingsLevel2::new);
+    public static final RegistryObject<Item> item_mcbbswiki_boots_level2 = ITEMS.register("item_mcbbswiki_boots_level2", ItemMcbbsWikiBootsLevel2::new);
+
+    public static final RegistryObject<Item> item_mcbbswiki_pickaxe_level2 = ITEMS.register("item_mcbbswiki_pickaxe_level2", ItemMcbbsWikiPickaxeLevel2::new);
+    public static final RegistryObject<Item> item_mcbbswiki_axe_level2 = ITEMS.register("item_mcbbswiki_axe_level2", ItemMcbbsWikiAxeLevel2::new);
+    public static final RegistryObject<Item> item_mcbbswiki_shovel_level2 = ITEMS.register("item_mcbbswiki_shovel_level2", ItemMcbbsWikiShovelLevel2::new);
+    public static final RegistryObject<Item> item_mcbbswiki_hoe_level2 = ITEMS.register("item_mcbbswiki_hoe_level2", ItemMcbbsWikiHoeLevel2::new);
+    public static final RegistryObject<Item> item_mcbbswiki_sword_level2 = ITEMS.register("item_mcbbswiki_sword_level2", ItemMcbbsWikiSwordLevel2::new);
+    // mcbbs wiki things level 2
 
     public static final RegistryObject<Item> item_mysterious_switch = ITEMS.register("item_mysterious_switch", ItemMysteriousSwitch::new);
     public static final RegistryObject<Item> item_mysterious_ingot = ITEMS.register("item_mysterious_ingot", ItemMysteriousIngot::new);

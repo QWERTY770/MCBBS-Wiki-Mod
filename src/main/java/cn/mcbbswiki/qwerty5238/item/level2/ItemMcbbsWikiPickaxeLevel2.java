@@ -4,6 +4,7 @@ import cn.mcbbswiki.qwerty5238.registry.ModGroupRegistry;
 import cn.mcbbswiki.qwerty5238.tooltype.McbbsWikiTierLevel2;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.PickaxeItem;
+import net.minecraftforge.event.entity.player.PlayerContainerEvent;
 
 public class ItemMcbbsWikiPickaxeLevel2 extends PickaxeItem {
     public static IItemTier tierLevel2 = new McbbsWikiTierLevel2();
