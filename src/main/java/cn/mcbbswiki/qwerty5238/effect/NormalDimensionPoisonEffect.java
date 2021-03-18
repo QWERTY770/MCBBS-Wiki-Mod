@@ -16,7 +16,7 @@ import javax.annotation.Nullable;
 
 public class NormalDimensionPoisonEffect extends Effect {
     public NormalDimensionPoisonEffect() {
-        super(EffectType.HARMFUL, 0xff0000);
+        super(EffectType.NEUTRAL, 0xff0000);
     }
 
     @Override
@@ -31,7 +31,7 @@ public class NormalDimensionPoisonEffect extends Effect {
         if (!(items.contains(ItemRegistry.item_mcbbswiki_helmet_level2.get()) ||
                 items.contains(ItemRegistry.item_mcbbswiki_chestplate_level2.get()) ||
                 items.contains(ItemRegistry.item_mcbbswiki_leggings_level2.get()) ||
-                items.contains(ItemRegistry.item_mcbbswiki_boots_level2.get()) && playerEntity.isEntityUndead())) {
+                items.contains(ItemRegistry.item_mcbbswiki_boots_level2.get())) && playerEntity.isEntityUndead()) {
             playerEntity.attackEntityFrom(DamageSource.MAGIC, 5 << amplifier);
             playerEntity.addExhaustion(0.005F * (float)(amplifier + 1));
         }

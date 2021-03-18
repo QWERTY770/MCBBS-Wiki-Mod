@@ -34,6 +34,18 @@
   "item.mcbbswiki.item_mcbbswiki_hoe_level1": "MCBBS Wiki 锄 (1级)",
   "item.mcbbswiki.item_mcbbswiki_axe_level1": "MCBBS Wiki 斧 (1级)",
   "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki 选择 (1级)",
+
+  "item.mcbbswiki.item_mcbbswiki_helmet_level2": "MCBBS Wiki 头盔 (2级)",
+  "item.mcbbswiki.item_mcbbswiki_chestplate_level2": "MCBBS Wiki 胸甲 (2级)",
+  "item.mcbbswiki.item_mcbbswiki_leggings_level2": "MCBBS Wiki 腿部仪表 (2级)",
+  "item.mcbbswiki.item_mcbbswiki_boots_level2": "MCBBS Wiki 靴子 (2级)",
+
+  "item.mcbbswiki.item_mcbbswiki_sword_level2": "MCBBS Wiki 剑 (2级)",
+  "item.mcbbswiki.item_mcbbswiki_shovel_level2": "MCBBS Wiki 铲 (2级)",
+  "item.mcbbswiki.item_mcbbswiki_hoe_level2": "MCBBS Wiki 锄 (2级)",
+  "item.mcbbswiki.item_mcbbswiki_axe_level2": "MCBBS Wiki 斧 (2级)",
+  "item.mcbbswiki.item_mcbbswiki_pickaxe_level2": "MCBBS Wiki 选择 (2级)",
+
   "item.mcbbswiki.item_mcbbswiki_lucky_block_piece": "MCBBS Wiki 幸运的块碎片",
 
   "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki 小怪兽",
@@ -75,5 +87,7 @@
   "advancements.mcbbswiki.tools_level1.title": "1级工具！",
   "advancements.mcbbswiki.tools_level1.description": "获得所有MCBBS Wiki1级工具。",
   "advancements.mcbbswiki.monster_spawn_egg.title": "3个蛋！",
-  "advancements.mcbbswiki.monster_spawn_egg.description": "获取3种怪物蛋、"
+  "advancements.mcbbswiki.monster_spawn_egg.description": "获取3种怪物蛋、",
+
+  "effect.mcbbswiki.effect_normal_dimension_poison": "中毒（普通维度）"
 }

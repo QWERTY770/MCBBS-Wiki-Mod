@@ -34,6 +34,17 @@
   "item.mcbbswiki.item_mcbbswiki_hoe_level1": "MCBBS Wiki Hoe (Level1)",
   "item.mcbbswiki.item_mcbbswiki_axe_level1": "MCBBS Wiki Axe (Level1)",
   "item.mcbbswiki.item_mcbbswiki_pickaxe_level1": "MCBBS Wiki Pickaxe (Level1)",
+
+  "item.mcbbswiki.item_mcbbswiki_helmet_level2": "MCBBS Wiki Helmet (Level2)",
+  "item.mcbbswiki.item_mcbbswiki_chestplate_level2": "MCBBS Wiki Chestplate (Level2)",
+  "item.mcbbswiki.item_mcbbswiki_leggings_level2": "MCBBS Wiki Leggings (Level2)",
+  "item.mcbbswiki.item_mcbbswiki_boots_level2": "MCBBS Wiki Boots (Level2)",
+
+  "item.mcbbswiki.item_mcbbswiki_sword_level2": "MCBBS Wiki Sword (Level2)",
+  "item.mcbbswiki.item_mcbbswiki_shovel_level2": "MCBBS Wiki Shovel (Level2)",
+  "item.mcbbswiki.item_mcbbswiki_hoe_level2": "MCBBS Wiki Hoe (Level2)",
+  "item.mcbbswiki.item_mcbbswiki_axe_level2": "MCBBS Wiki Axe (Level2)",
+  "item.mcbbswiki.item_mcbbswiki_pickaxe_level2": "MCBBS Wiki Pickaxe (Level2)",
   "item.mcbbswiki.item_mcbbswiki_lucky_block_piece": "MCBBS Wiki Lucky Block Piece",
 
   "entity.mcbbswiki.entity_small_mcbbswiki_monster": "MCBBS Wiki Small Monster",
@@ -75,5 +86,7 @@
   "advancements.mcbbswiki.sword_eee.title": "Kill with eee.",
   "advancements.mcbbswiki.sword_eee.description": "Synthesize eee sword.",
   "advancements.mcbbswiki.tools_level1.title": "Level 1 tool!",
-  "advancements.mcbbswiki.tools_level1.description": "Get all MCBBS Wiki level 1 tools."
+  "advancements.mcbbswiki.tools_level1.description": "Get all MCBBS Wiki level 1 tools.",
+
+  "effect.mcbbswiki.effect_normal_dimension_poison": "Normal Dimension Poison"
 }
