@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "mcbbswiki:item_mcbbswiki_hoe_level1"
+  },
+  "addition": {
+    "item": "mcbbswiki:item_mysterious_ingot"
+  },
+  "result": {
+    "item": "mcbbswiki:item_mcbbswiki_hoe_level2"
+  }
+}
