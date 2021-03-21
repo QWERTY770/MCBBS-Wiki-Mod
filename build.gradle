@@ -14,7 +14,7 @@ apply plugin: 'com.otakusaikou.fgcn'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.8b2'
+version = '0.8'
 group = 'com.mcbbswiki.qwerty5238' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'mcbbswiki'
 
