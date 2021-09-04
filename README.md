@@ -1,9 +1,9 @@
 # MCBBS Wiki Mod
 
 ## Dependencies
-__Minecraft__: 1.16 —— 1.16.5 
+__Minecraft__: 1.16 —— 1.16.5(recommended), updating to 1.17 -- 1.17.1
 
-__Forge__: 33 or above
+__Forge__: 1.16: 33-36(recommended)  1.17: 37
 
 ## How to install
 + Download JAR file from https://www.mcmod.cn/download/3343.html
@@ -81,4 +81,3 @@ LexManos' Install Video
 https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
 
 For more details update more often refer to the Forge Forums:
-http://www.minecraftforge.net/forum/index.php/topic,14048.0.html

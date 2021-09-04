@@ -1,14 +1,12 @@
 package cn.mcbbswiki.qwerty5238.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.material.Material;
 
 public class BlockMcbbsWikiBaseOre extends Block {
     public BlockMcbbsWikiBaseOre(){
-        super(Properties.create(Material.ROCK)
-                .hardnessAndResistance(50)
-                .harvestTool(ToolType.get("pickaxe"))
-                .harvestLevel(3));
+        super(Properties.of(Material.STONE)
+                .strength(50)
+                .requiresCorrectToolForDrops());
     }
 }
