@@ -17,7 +17,6 @@ public class RegistryHandler {
         BlockRegistry.BLOCKS.register(bus);
         EntityRegistry.ENTITY_TYPES.register(bus);
         ItemRegistry.ITEMS.register(bus);
-        FeatureRegistry.FEATURES.register(bus);
     }
 
     @SubscribeEvent(priority = EventPriority.LOWEST)

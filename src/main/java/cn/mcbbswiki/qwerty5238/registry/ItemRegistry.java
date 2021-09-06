@@ -16,21 +16,21 @@ import net.minecraftforge.registries.ForgeRegistries;
  */
 public abstract class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "mcbbswiki");
-    public static final RegistryObject<Item> block_qwerty5238 = ITEMS.register("block_qwerty5238", () -> new BlockItem(BlockRegistry.block_qwerty5238.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_qwerty5238 = ITEMS.register("block_qwerty5238", () -> new BlockItem(BlockRegistry.block_qwerty5238.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
     // qwerty
 
-    public static final RegistryObject<Item> block_eicy = ITEMS.register("block_eicy", () -> new BlockItem(BlockRegistry.block_eicy.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
-    public static final RegistryObject<Item> block_sheeprealms = ITEMS.register("block_sheeprealms", () -> new BlockItem(BlockRegistry.block_sheeprealms.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
-    public static final RegistryObject<Item> block_mashkjo = ITEMS.register("block_mashkjo", () -> new BlockItem(BlockRegistry.block_mashkjo.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
-    public static final RegistryObject<Item> block_freeliealgebra = ITEMS.register("block_freeliealgebra", () -> new BlockItem(BlockRegistry.block_freeliealgebra.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
-    public static final RegistryObject<Item> block_saltlovely = ITEMS.register("block_saltlovely", () -> new BlockItem(BlockRegistry.block_saltlovely.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
-    public static final RegistryObject<Item> block_woshiren1012 = ITEMS.register("block_woshiren1012", () -> new BlockItem(BlockRegistry.block_woshiren1012.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
-    public static final RegistryObject<Item> block_whitei = ITEMS.register("block_whitei", () -> new BlockItem(BlockRegistry.block_whitei.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_eicy = ITEMS.register("block_eicy", () -> new BlockItem(BlockRegistry.block_eicy.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_sheeprealms = ITEMS.register("block_sheeprealms", () -> new BlockItem(BlockRegistry.block_sheeprealms.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_mashkjo = ITEMS.register("block_mashkjo", () -> new BlockItem(BlockRegistry.block_mashkjo.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_freeliealgebra = ITEMS.register("block_freeliealgebra", () -> new BlockItem(BlockRegistry.block_freeliealgebra.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_saltlovely = ITEMS.register("block_saltlovely", () -> new BlockItem(BlockRegistry.block_saltlovely.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_woshiren1012 = ITEMS.register("block_woshiren1012", () -> new BlockItem(BlockRegistry.block_woshiren1012.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_whitei = ITEMS.register("block_whitei", () -> new BlockItem(BlockRegistry.block_whitei.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
     // administrators
 
-    public static final RegistryObject<Item> block_noobx = ITEMS.register("block_noobx", () -> new BlockItem(BlockRegistry.block_noobx.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
-    public static final RegistryObject<Item> block_aurora = ITEMS.register("block_aurora", () -> new BlockItem(BlockRegistry.block_aurora.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
-    public static final RegistryObject<Item> block_eminfantry = ITEMS.register("block_eminfantry", () -> new BlockItem(BlockRegistry.block_eminfantry.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_noobx = ITEMS.register("block_noobx", () -> new BlockItem(BlockRegistry.block_noobx.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_aurora = ITEMS.register("block_aurora", () -> new BlockItem(BlockRegistry.block_aurora.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_eminfantry = ITEMS.register("block_eminfantry", () -> new BlockItem(BlockRegistry.block_eminfantry.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
     // 2020/11/25 to 2020/11/26 -- added at 2020/11/26 19:27
 
     public static final RegistryObject<Item> item_sword_eee = ITEMS.register("item_sword_eee", ItemSwordEEE::new);
@@ -38,12 +38,12 @@ public abstract class ItemRegistry {
     public static final RegistryObject<Item> item_stacked_eee = ITEMS.register("item_stacked_eee", ItemStackedEEE::new);
     // eee
 
-    public static final RegistryObject<Item> block_mcbbswiki_base_ore = ITEMS.register("block_mcbbswiki_base_ore", () -> new BlockItem(BlockRegistry.block_mcbbswiki_base_ore.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_mcbbswiki_base_ore = ITEMS.register("block_mcbbswiki_base_ore", () -> new BlockItem(BlockRegistry.block_mcbbswiki_base_ore.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
     public static final RegistryObject<Item> item_mcbbswiki_ingot = ITEMS.register("item_mcbbswiki_ingot", ItemMcbbsWikiIngot::new);
     public static final RegistryObject<Item> item_transporter = ITEMS.register("item_transporter", ItemTransporter::new);
-    public static final RegistryObject<Item> block_mcbbswiki = ITEMS.register("block_mcbbswiki", () -> new BlockItem(BlockRegistry.block_mcbbswiki.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_mcbbswiki = ITEMS.register("block_mcbbswiki", () -> new BlockItem(BlockRegistry.block_mcbbswiki.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
     public static final RegistryObject<Item> item_mcbbswiki_lucky_block_piece = ITEMS.register("item_mcbbswiki_lucky_block_piece", ItemMcbbsWikiLuckyBlockPiece::new);
-    public static final RegistryObject<Item> block_mcbbswiki_lucky_block = ITEMS.register("block_mcbbswiki_lucky_block", () -> new BlockItem(BlockRegistry.block_mcbbswiki_lucky_block.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_mcbbswiki_lucky_block = ITEMS.register("block_mcbbswiki_lucky_block", () -> new BlockItem(BlockRegistry.block_mcbbswiki_lucky_block.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
     // something important
 
     public static final RegistryObject<Item> item_mcbbswiki_helmet_level1 = ITEMS.register("item_mcbbswiki_helmet_level1", ItemMcbbsWikiHelmetLevel1::new);
@@ -73,7 +73,7 @@ public abstract class ItemRegistry {
     public static final RegistryObject<Item> item_mysterious_switch = ITEMS.register("item_mysterious_switch", ItemMysteriousSwitch::new);
     public static final RegistryObject<Item> item_mysterious_ingot = ITEMS.register("item_mysterious_ingot", ItemMysteriousIngot::new);
     public static final RegistryObject<Item> item_mysterious_ingot_piece = ITEMS.register("item_mysterious_ingot_piece", ItemMysteriousIngotPiece::new);
-    public static final RegistryObject<Item> block_mysterious = ITEMS.register("block_mysterious", () -> new BlockItem(BlockRegistry.block_mysterious.get(), new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+    public static final RegistryObject<Item> block_mysterious = ITEMS.register("block_mysterious", () -> new BlockItem(BlockRegistry.block_mysterious.get(), new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
     // mysterious
 
     public static final RegistryObject<CustomSpawnEggItem> item_small_mcbbswiki_monster_spawn_egg = registerSpawnEgg("item_small_mcbbswiki_monster", EntityRegistry.entity_small_mcbbswiki_monster, 0x7bd4ff, 0xff8784);
@@ -86,6 +86,6 @@ public abstract class ItemRegistry {
      * code source:https://github.com/HungTeen/pvzmod/blob/master/src/main/java/com/hungteen/pvz/register/ItemRegister.java
      */
     private static RegistryObject<CustomSpawnEggItem> registerSpawnEgg(String name, RegistryObject<? extends EntityType<?>> entityType, int color1, int color2){
-        return ITEMS.register(name + "_spawn_egg", () -> new CustomSpawnEggItem(entityType, color1, color2, new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup)));
+        return ITEMS.register(name + "_spawn_egg", () -> new CustomSpawnEggItem(entityType, color1, color2, new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup)));
     }
 }

@@ -58,12 +58,11 @@ public class ItemTransporter extends Item {
         assert server != null;
         Vec3 t = playerEntity.position();
         Level level = playerEntity.level;
-        Vector2f pitchYaw = playerEntity.getPitchYaw();
         if (isPortal(level, blockpos)) {
             level.playSound(playerEntity, blockpos, SoundEvents.PORTAL_AMBIENT, SoundSource.BLOCKS, 1.0F, 1.0F);
             if (playerEntity.level.dimension() == Level.OVERWORLD){
                 if(playerEntity instanceof ServerPlayer){
-                    ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
+                    ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, 1,1);
                     int posX = (int)playerEntity.getX();
                     int posZ = (int)playerEntity.getZ();
                     level = playerEntity.level;
@@ -90,7 +89,7 @@ public class ItemTransporter extends Item {
             }
             else if (playerEntity.level.dimension().location().toString().equals("mcbbswiki:mcbbswiki_normal_dimension")){
                 if(playerEntity instanceof ServerPlayer){
-                    ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
+                    ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, 1, 1);
                     int posX = (int)playerEntity.getX();
                     int posZ = (int)playerEntity.getZ();
                     level = playerEntity.level;
