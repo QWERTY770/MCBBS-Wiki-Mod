@@ -35,14 +35,14 @@ public class BlockMysterious extends Block {
     public static void changeLive(BlockState state, Level level, BlockPos pos){
         level.setBlock(pos,
                 state.setValue(BlockMysterious.getLiveProperty(), state.getValue(BlockMysterious.getLiveProperty()) == 1 ? 0 : 1),
-                2
+                64
         );
     }
 
     public static void changeTick(BlockState state, Level level, BlockPos pos) {
         level.setBlock(pos,
                 state.setValue(BlockMysterious.getTickProperty(), state.getValue(BlockMysterious.getTickProperty()) == 1 ? 0 : 1),
-                2
+                64
         );
     }
 }

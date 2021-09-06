@@ -2,13 +2,12 @@ package cn.mcbbswiki.qwerty5238.item.level2;
 
 import cn.mcbbswiki.qwerty5238.registry.ModGroupRegistry;
 import cn.mcbbswiki.qwerty5238.tooltype.McbbsWikiTierLevel2;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.PickaxeItem;
-import net.minecraftforge.event.entity.player.PlayerContainerEvent;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tier;
 
 public class ItemMcbbsWikiPickaxeLevel2 extends PickaxeItem {
-    public static IItemTier tierLevel2 = new McbbsWikiTierLevel2();
+    public static Tier tierLevel2 = new McbbsWikiTierLevel2();
     public ItemMcbbsWikiPickaxeLevel2() {
-        super(tierLevel2, 1, -2.8F, (new Properties()).group(ModGroupRegistry.McbbsWikiGroup));
+        super(tierLevel2, 1, -2.8F, (new Properties()).tab(ModGroupRegistry.McbbsWikiGroup));
     }
 }

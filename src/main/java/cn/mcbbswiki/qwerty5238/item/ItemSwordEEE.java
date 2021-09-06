@@ -2,44 +2,44 @@ package cn.mcbbswiki.qwerty5238.item;
 
 import cn.mcbbswiki.qwerty5238.registry.ItemRegistry;
 import cn.mcbbswiki.qwerty5238.registry.ModGroupRegistry;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
 
 public class ItemSwordEEE extends SwordItem {
-    private static final IItemTier I_ITEM_TIER = new IItemTier() {
+    private static final Tier I_ITEM_TIER = new Tier() {
         @Override
-        public int getMaxUses() {
+        public int getUses() {
             return 1000;
         }
 
         @Override
-        public float getEfficiency() {
+        public float getSpeed() {
             return 10.0F;
         }
 
         @Override
-        public float getAttackDamage() {
+        public float getAttackDamageBonus() {
             return 4.0F;
         }
 
         @Override
-        public int getHarvestLevel() {
+        public int getLevel() {
             return 2;
         }
 
         @Override
-        public int getEnchantability() {
+        public int getEnchantmentValue() {
             return 30;
         }
 
         @Override
-        public Ingredient getRepairMaterial() {
-            return Ingredient.fromItems(ItemRegistry.item_eee.get());
+        public Ingredient getRepairIngredient() {
+            return Ingredient.of(ItemRegistry.item_eee.get());
         }
     };
     public ItemSwordEEE() {
-        super(I_ITEM_TIER, 5, -2.2F, new Item.Properties().group(ModGroupRegistry.McbbsWikiGroup));
+        super(I_ITEM_TIER, 5, -2.2F, new Item.Properties().tab(ModGroupRegistry.McbbsWikiGroup));
     }
 }
