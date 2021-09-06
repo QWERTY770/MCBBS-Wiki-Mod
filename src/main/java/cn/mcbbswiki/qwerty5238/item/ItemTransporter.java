@@ -4,41 +4,40 @@ import cn.mcbbswiki.qwerty5238.registry.BlockRegistry;
 import cn.mcbbswiki.qwerty5238.registry.ModGroupRegistry;
 import cn.mcbbswiki.qwerty5238.util.CommonUtils;
 import cn.mcbbswiki.qwerty5238.util.GetWorld;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.material.Material;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemUseContext;
+import net.minecraft.core.BlockPos;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.SoundEvents;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.vector.Vector2f;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.world.World;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.phys.Vec3;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class ItemTransporter extends Item {
     public ItemTransporter() {
-        super(new Properties().group(ModGroupRegistry.McbbsWikiGroup));
+        super(new Properties().tab(ModGroupRegistry.McbbsWikiGroup));
     }
 
-    private static boolean isPortal(World world, BlockPos pos){
+    private static boolean isPortal(Level level, BlockPos pos){
         int y = pos.getY();
         for (int x = pos.getX() - 2; x <= pos.getX() + 2; x++){
             for (int z = pos.getZ() - 2; z <= pos.getZ() + 2; z++){
                 if (x == pos.getX() && z == pos.getZ()){
-                    if (world.getBlockState(new BlockPos(x, y, z)).getBlock()
+                    if (level.getBlockState(new BlockPos(x, y, z)).getBlock()
                     != BlockRegistry.block_mcbbswiki.get()){
                         return false;
                     }
                 }
                 else {
-                    if (world.getBlockState(new BlockPos(x, y, z)).getBlock()
+                    if (level.getBlockState(new BlockPos(x, y, z)).getBlock()
                             != Blocks.OBSIDIAN){
                         return false;
                     }
@@ -51,34 +50,34 @@ public class ItemTransporter extends Item {
     @Override
     @ParametersAreNonnullByDefault
     @Nonnull
-    public ActionResultType onItemUse(ItemUseContext context) {
-        BlockPos blockpos = context.getPos();
-        PlayerEntity playerEntity = context.getPlayer();
+    public InteractionResult useOn(UseOnContext context) {
+        Player playerEntity = context.getPlayer();
+        BlockPos blockpos = context.getClickedPos();
         assert playerEntity != null;
         MinecraftServer server = playerEntity.getServer();
         assert server != null;
-        Vector3d t = playerEntity.getPositionVec();
-        World world = playerEntity.getEntityWorld();
+        Vec3 t = playerEntity.position();
+        Level level = playerEntity.level;
         Vector2f pitchYaw = playerEntity.getPitchYaw();
-        if (isPortal(world, blockpos)) {
-            world.playSound(playerEntity, blockpos, SoundEvents.BLOCK_PORTAL_AMBIENT, SoundCategory.BLOCKS, 1.0F, 1.0F);
-            if (playerEntity.world.getDimensionKey() == World.OVERWORLD){
-                if(playerEntity instanceof ServerPlayerEntity){
-                    ((ServerPlayerEntity) playerEntity).teleport(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
-                    int posX = (int)playerEntity.getPosX();
-                    int posZ = (int)playerEntity.getPosZ();
-                    world = playerEntity.getEntityWorld();
+        if (isPortal(level, blockpos)) {
+            level.playSound(playerEntity, blockpos, SoundEvents.PORTAL_AMBIENT, SoundSource.BLOCKS, 1.0F, 1.0F);
+            if (playerEntity.level.dimension() == Level.OVERWORLD){
+                if(playerEntity instanceof ServerPlayer){
+                    ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
+                    int posX = (int)playerEntity.getX();
+                    int posZ = (int)playerEntity.getZ();
+                    level = playerEntity.level;
                     for (int h = 255; h > 0; h--){
-                        Material m = world.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
+                        Material m = level.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
                         if (m != Material.AIR){
                             if (m == Material.WATER || m == Material.LAVA){
                                 for (int x = posX - 2; x <= posX + 2; x++){
                                     for (int z = posZ - 2; z <= posZ + 2; z++){
-                                        world.setBlockState(new BlockPos(x, h, z), Blocks.STONE.getDefaultState(), 64);
+                                        level.setBlock(new BlockPos(x, h, z), Blocks.STONE.defaultBlockState(), 64);
                                     }
                                 }
                             }
-                            playerEntity.setPosition(posX, h + 2, posZ);
+                            playerEntity.setPos(posX, h + 2, posZ);
                             break;
                         }
                     }
@@ -86,26 +85,26 @@ public class ItemTransporter extends Item {
                     // System.out.println(GetWorld.getServerWorlds(server));
                     // System.out.println(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension").getDimensionKey().getLocation().toString());
                     // System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
-                    return ActionResultType.SUCCESS;
+                    return InteractionResult.SUCCESS;
                 }
             }
-            else if (playerEntity.world.getDimensionKey().getLocation().toString().equals("mcbbswiki:mcbbswiki_normal_dimension")){
-                if(playerEntity instanceof ServerPlayerEntity){
-                    ((ServerPlayerEntity) playerEntity).teleport(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
-                    int posX = (int)playerEntity.getPosX();
-                    int posZ = (int)playerEntity.getPosZ();
-                    world = playerEntity.getEntityWorld();
+            else if (playerEntity.level.dimension().location().toString().equals("mcbbswiki:mcbbswiki_normal_dimension")){
+                if(playerEntity instanceof ServerPlayer){
+                    ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, pitchYaw.y, pitchYaw.x);
+                    int posX = (int)playerEntity.getX();
+                    int posZ = (int)playerEntity.getZ();
+                    level = playerEntity.level;
                     for (int h = 255; h > 0; h--){
-                        Material m = world.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
+                        Material m = level.getBlockState(new BlockPos(posX, h, posZ)).getMaterial();
                         if (m != Material.AIR){
                             if (m == Material.WATER || m == Material.LAVA){
                                 for (int x = posX - 2; x <= posX + 2; x++){
                                     for (int z = posZ - 2; z <= posZ + 2; z++){
-                                        world.setBlockState(new BlockPos(x, h, z), Blocks.STONE.getDefaultState(), 64);
+                                        level.setBlock(new BlockPos(x, h, z), Blocks.STONE.defaultBlockState(), 64);
                                     }
                                 }
                             }
-                            playerEntity.setPosition(posX, h, posZ);
+                            playerEntity.setPos(posX, h, posZ);
                             break;
                         }
                     }
@@ -113,7 +112,7 @@ public class ItemTransporter extends Item {
                     // System.out.println(GetWorld.getServerWorlds(server));
                     // System.out.println(GetWorld.getWorldFromServer(server, "minecraft:overworld").getDimensionKey().getLocation().toString());
                     // System.out.println(playerentity.world.getDimensionKey().getLocation().toString());
-                    return ActionResultType.SUCCESS;
+                    return InteractionResult.SUCCESS;
                 }
             }
             else {
@@ -123,6 +122,6 @@ public class ItemTransporter extends Item {
         else {
             CommonUtils.sendMsg(playerEntity,"message.mcbbswiki.invalid_portal");
         }
-        return ActionResultType.PASS;
+        return InteractionResult.PASS;
     }
 }

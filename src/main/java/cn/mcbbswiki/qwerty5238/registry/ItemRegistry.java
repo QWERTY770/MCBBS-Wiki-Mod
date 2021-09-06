@@ -4,10 +4,10 @@ import cn.mcbbswiki.qwerty5238.item.*;
 import cn.mcbbswiki.qwerty5238.item.level1.*;
 import cn.mcbbswiki.qwerty5238.item.level2.*;
 import cn.mcbbswiki.qwerty5238.item.technical.CustomSpawnEggItem;
-import net.minecraft.entity.EntityType;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 

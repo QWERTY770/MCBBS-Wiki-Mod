@@ -6,7 +6,7 @@ import net.minecraft.world.level.material.Material;
 public class BlockMcbbsWikiBaseOre extends Block {
     public BlockMcbbsWikiBaseOre(){
         super(Properties.of(Material.STONE)
-                .strength(50)
+                .strength(2.5F, 10.0F)
                 .requiresCorrectToolForDrops());
     }
 }

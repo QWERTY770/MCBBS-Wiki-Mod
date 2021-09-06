@@ -1,0 +1,44 @@
+{
+  "precipitation": "rain",
+  "category": "extreme_hills",
+  "depth": -0.5,
+  "scale": 1.3,
+  "temperature": 0.7,
+  "temperature_modifier": "none",
+  "downfall": 0.3,
+  "effects": {
+    "sky_color": 65535,
+    "fog_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "surface_builder": "minecraft:default",
+  "carvers": {
+    "air": ["minecraft:cave"],
+    "liquid": ["minecraft_underwater_cave"]
+  },
+  "spawners": {
+    "creature": [
+      {
+        "type": "mcbbswiki:entity_small_mcbbswiki_monster",
+        "weight": 10,
+        "minCount": 5,
+        "maxCount": 7
+      },
+      {
+        "type": "mcbbswiki:entity_middle_mcbbswiki_monster",
+        "weight": 6,
+        "minCount": 3,
+        "maxCount": 5
+      },
+      {
+        "type": "mcbbswiki:entity_large_mcbbswiki_monster",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ]
+  },
+  "player_spawn_friendly": false,
+  "creature_spawn_friendly": 0.7,
+}

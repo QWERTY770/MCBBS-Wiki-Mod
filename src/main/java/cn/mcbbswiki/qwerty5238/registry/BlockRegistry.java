@@ -1,8 +1,8 @@
 package cn.mcbbswiki.qwerty5238.registry;
 
 import cn.mcbbswiki.qwerty5238.block.*;
-import net.minecraft.block.Block;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 

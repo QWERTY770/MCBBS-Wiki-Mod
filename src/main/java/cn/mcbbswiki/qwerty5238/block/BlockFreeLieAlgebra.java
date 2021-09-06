@@ -6,7 +6,7 @@ import net.minecraft.world.level.material.Material;
 public class BlockFreeLieAlgebra extends Block {
     public BlockFreeLieAlgebra(){
         super(Properties.of(Material.STONE)
-                .strength(30)
+                .strength(1.5F, 6.0F)
                 .requiresCorrectToolForDrops());
     }
 }

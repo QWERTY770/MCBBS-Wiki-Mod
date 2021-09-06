@@ -6,7 +6,7 @@ import net.minecraft.world.level.material.Material;
 public class BlockMcbbsWikiLuckyBlock extends Block {
     public BlockMcbbsWikiLuckyBlock(){
         super(Properties.of(Material.STONE)
-                .strength(20)
+                .strength(1F, 4F)
                 .requiresCorrectToolForDrops());
     }
 }

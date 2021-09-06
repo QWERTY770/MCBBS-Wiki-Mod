@@ -1,10 +1,10 @@
 package cn.mcbbswiki.qwerty5238.util;
 
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.entity.player.Player;
 
 public abstract class CommonUtils {
-    public static void sendMsg(PlayerEntity player, String translationKey){
-        player.sendMessage(new TranslationTextComponent(translationKey), player.getUniqueID());
+    public static void sendMsg(Player player, String translationKey){
+        player.sendMessage(new TranslatableComponent(translationKey), player.getUUID());
     }
 }
