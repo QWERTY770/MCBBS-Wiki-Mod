@@ -5,33 +5,33 @@ import cn.mcbbswiki.qwerty5238.util.CommonUtils;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import net.minecraft.command.CommandSource;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.util.Hand;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ItemStack;
 
-public class MysteriousSwitchTypeCommand implements Command<CommandSource> {
+public class MysteriousSwitchTypeCommand implements Command<CommandSourceStack> {
     public static MysteriousSwitchTypeCommand instance = new MysteriousSwitchTypeCommand();
 
     @Override
-    public int run(CommandContext<CommandSource> context) throws CommandSyntaxException {
+    public int run(CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
         try {
             int type = context.getArgument("type_int", int.class);
-            ServerPlayerEntity playerEntity = context.getSource().asPlayer();
-            ItemStack itemStack = playerEntity.getHeldItemMainhand();
+            ServerPlayer playerEntity = context.getSource().getPlayerOrException();
+            ItemStack itemStack = playerEntity.getItemBySlot(EquipmentSlot.MAINHAND);
             if (itemStack.getItem() == ItemRegistry.item_mysterious_switch.get()) {
-                CompoundNBT item_nbt = itemStack.getTag();
-                if (item_nbt == null) item_nbt = new CompoundNBT();
+                CompoundTag item_nbt = itemStack.getTag();
+                if (item_nbt == null) item_nbt = new CompoundTag();
                 if (type == 0) {
                     item_nbt.putInt("type", 1);
                     itemStack.setTag(item_nbt);
-                    playerEntity.setHeldItem(Hand.MAIN_HAND, itemStack);
+                    playerEntity.setItemSlot(EquipmentSlot.MAINHAND, itemStack);
                     CommonUtils.sendMsg(playerEntity, "message.mcbbswiki.switch_type_command_tick_success");
                 } else if (type == 1) {
                     item_nbt.putInt("type", 0);
                     itemStack.setTag(item_nbt);
-                    playerEntity.setHeldItem(Hand.MAIN_HAND, itemStack);
+                    playerEntity.setItemSlot(EquipmentSlot.MAINHAND, itemStack);
                     CommonUtils.sendMsg(playerEntity, "message.mcbbswiki.switch_type_command_live_success");
                 } else {
                     CommonUtils.sendMsg(playerEntity, "message.mcbbswiki.switch_type_command_fail_1");

@@ -1,18 +1,16 @@
 package cn.mcbbswiki.qwerty5238.effect;
 
 import cn.mcbbswiki.qwerty5238.registry.ItemRegistry;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.core.NonNullList;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.core.NonNullList;
 
 import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 
 public class NormalDimensionPoisonEffect extends MobEffect {
     public NormalDimensionPoisonEffect() {
@@ -20,7 +18,7 @@ public class NormalDimensionPoisonEffect extends MobEffect {
     }
 
     @Override
-    public void applyEffectTick(LivingEntity entityLivingBaseIn, int amplifier) {
+    public void applyEffectTick(@Nonnull LivingEntity entityLivingBaseIn, int amplifier) {
         if (!(entityLivingBaseIn instanceof Player)) return;
         Player playerEntity = (Player) entityLivingBaseIn;
         NonNullList<ItemStack> armorInventory = playerEntity.getInventory().armor;
@@ -28,12 +26,10 @@ public class NormalDimensionPoisonEffect extends MobEffect {
         for (ItemStack stack : armorInventory) {
             items.add(stack.getItem());
         }
-        if (!(items.contains(ItemRegistry.item_mcbbswiki_helmet_level2.get()) ||
-                items.contains(ItemRegistry.item_mcbbswiki_chestplate_level2.get()) ||
-                items.contains(ItemRegistry.item_mcbbswiki_leggings_level2.get()) ||
-                items.contains(ItemRegistry.item_mcbbswiki_boots_level2.get())) && playerEntity.isEntityUndead()) {
-            playerEntity.attackEntityFrom(DamageSource.MAGIC, 5 << amplifier);
-            playerEntity.addExhaustion(0.005F * (float)(amplifier + 1));
+        // TODO: add advancement check
+        if (!playerEntity.isDeadOrDying()) {
+            playerEntity.hurt(DamageSource.MAGIC, 4 + amplifier);
+            playerEntity.causeFoodExhaustion(0.005F * (float)(amplifier + 1));
         }
     }
 }

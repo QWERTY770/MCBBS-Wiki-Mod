@@ -1,30 +1,27 @@
 package cn.mcbbswiki.qwerty5238.entity;
 
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.world.World;
 
-public class SmallMcbbsWikiMonsterEntity extends MonsterEntity {
-    public SmallMcbbsWikiMonsterEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
-        super(type, worldIn);
-        this.experienceValue = 5;
-        this.getAttributeManager().createInstanceIfAbsent(Attributes.MAX_HEALTH);
-        this.getAttributeManager().createInstanceIfAbsent(Attributes.ARMOR);
-        this.getAttributeManager().createInstanceIfAbsent(Attributes.MOVEMENT_SPEED);
-        this.getAttributeManager().createInstanceIfAbsent(Attributes.ATTACK_DAMAGE);
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
+
+public class SmallMcbbsWikiMonsterEntity extends Monster {
+    public SmallMcbbsWikiMonsterEntity(EntityType<? extends Monster> type, Level level) {
+        super(type, level);
+        this.xpReward = 5;
     }
 
     @Override
     public void registerGoals(){
-        this.goalSelector.addGoal(1, new SwimGoal(this));
+        this.goalSelector.addGoal(1, new FloatGoal(this));
         this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.0D, false));
-        this.goalSelector.addGoal(5, new WaterAvoidingRandomWalkingGoal(this, 0.8D));
-        this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, 8.0F));
-        this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
-        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
+        this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.8D));
+        this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
+        this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, true));
     }
 
     public void tick(){
