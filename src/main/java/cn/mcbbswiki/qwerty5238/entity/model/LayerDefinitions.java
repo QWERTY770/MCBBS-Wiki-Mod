@@ -15,7 +15,8 @@ public class LayerDefinitions {
         ImmutableMap.Builder<ModelLayerLocation, LayerDefinition> builder = ImmutableMap.builder();
         builder.put(ModelLayers.SMALL_MONSTER, SmallMcbbsWikiMonsterModel.createBodyLayer());
         builder.put(ModelLayers.MIDDLE_MONSTER, MiddleMcbbsWikiMonsterModel.createBodyLayer());
-        //builder.put(ModelLayers.LARGE_MONSTER, LargeMcbbsWikiMonsterModel.createBodyLayer());
+        builder.put(ModelLayers.LARGE_MONSTER, LargeMcbbsWikiMonsterModel.createBodyLayer());
+        builder.put(ModelLayers.RAY_OF_SUNSHINE, RayOfSunshineModel.createBodyLayer());
 
         return builder.build();
     }

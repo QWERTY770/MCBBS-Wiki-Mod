@@ -2,6 +2,7 @@ package cn.mcbbswiki.qwerty5238.entity.render;
 
 import cn.mcbbswiki.qwerty5238.McbbsWiki;
 import cn.mcbbswiki.qwerty5238.entity.RayOfSunshineEntity;
+import cn.mcbbswiki.qwerty5238.entity.model.ModelLayers;
 import cn.mcbbswiki.qwerty5238.entity.model.RayOfSunshineModel;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
@@ -15,8 +16,8 @@ public class RayOfSunshineRender extends MobRenderer<RayOfSunshineEntity, RayOfS
     private static final ResourceLocation FIREBALL_TEXTURES = McbbsWiki.locate("textures/entity/boss/ray_of_sunshine_fireball.png");
     private static final ResourceLocation FLUID_TEXTURES = McbbsWiki.locate("textures/entity/boss/ray_of_sunshine_fluid.png");
 
-    public RayOfSunshineRender(EntityRendererProvider.Context renderManagerIn) {
-        super(renderManagerIn, new RayOfSunshineModel(), 3F);
+    public RayOfSunshineRender(EntityRendererProvider.Context context) {
+        super(context, new RayOfSunshineModel(context.bakeLayer(ModelLayers.RAY_OF_SUNSHINE)), 3F);
     }
 
     @Override

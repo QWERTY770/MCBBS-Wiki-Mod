@@ -14,7 +14,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 public class MiddleMcbbsWikiMonsterRender extends MobRenderer<MiddleMcbbsWikiMonsterEntity, MiddleMcbbsWikiMonsterModel> {
 
     public MiddleMcbbsWikiMonsterRender(EntityRendererProvider.Context context) {
-        super(context, new MiddleMcbbsWikiMonsterModel(context.bakeLayer(ModelLayers.SMALL_MONSTER)), 1.5F);
+        super(context, new MiddleMcbbsWikiMonsterModel(context.bakeLayer(ModelLayers.MIDDLE_MONSTER)), 1.5F);
     }
 
     @Override

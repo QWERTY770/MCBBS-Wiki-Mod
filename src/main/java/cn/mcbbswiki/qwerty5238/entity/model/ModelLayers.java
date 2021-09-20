@@ -13,6 +13,7 @@ public class ModelLayers {
     public static final ModelLayerLocation SMALL_MONSTER = register("small_mcbbswiki_monster");
     public static final ModelLayerLocation MIDDLE_MONSTER = register("middle_mcbbswiki_monster");
     public static final ModelLayerLocation LARGE_MONSTER = register("large_mcbbswiki_monster");
+    public static final ModelLayerLocation RAY_OF_SUNSHINE = register("ray_of_sunshine");
 
     private static ModelLayerLocation register(String p_171294_) {
         return register(p_171294_, "main");

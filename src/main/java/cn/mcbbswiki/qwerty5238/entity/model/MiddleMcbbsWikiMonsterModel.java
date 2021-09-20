@@ -24,7 +24,7 @@ public class MiddleMcbbsWikiMonsterModel extends EntityModel<MiddleMcbbsWikiMons
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
         partdefinition.addOrReplaceChild("cube", CubeListBuilder.create().texOffs(0, 0).addBox(-16.0F, -16.0F, -0.0F, 24.0F, 12.0F, 24.0F), PartPose.ZERO);
-        return LayerDefinition.create(meshdefinition, 64, 64);
+        return LayerDefinition.create(meshdefinition, 96, 96);
     }
 
     @Override
