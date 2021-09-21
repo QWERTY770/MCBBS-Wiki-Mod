@@ -22,7 +22,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.8'
+version = '0.8b2'
 group = 'cn.mcbbswiki.qwerty5238' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'mcbbswiki'
 
