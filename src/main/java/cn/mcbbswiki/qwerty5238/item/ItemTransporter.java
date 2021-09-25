@@ -62,7 +62,7 @@ public class ItemTransporter extends Item {
             level.playSound(playerEntity, blockpos, SoundEvents.PORTAL_AMBIENT, SoundSource.BLOCKS, 1.0F, 1.0F);
             if (playerEntity.level.dimension() == Level.OVERWORLD){
                 if(playerEntity instanceof ServerPlayer){
-                    ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "mcbbswiki:mcbbswiki_normal_dimension"), t.x, t.y, t.z, 1,1);
+                    ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "mcbbswiki:normal_dimension"), t.x, t.y, t.z, 1,1);
                     int posX = (int)playerEntity.getX();
                     int posZ = (int)playerEntity.getZ();
                     level = playerEntity.level;

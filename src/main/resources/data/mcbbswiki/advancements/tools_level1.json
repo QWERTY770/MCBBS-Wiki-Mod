@@ -18,7 +18,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_sword_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_sword_level1"]
           }
         ]
       }
@@ -28,7 +28,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_shovel_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_shovel_level1"]
           }
         ]
       }
@@ -38,7 +38,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_hoe_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_hoe_level1"]
           }
         ]
       }
@@ -48,7 +48,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_axe_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_axe_level1"]
           }
         ]
       }
@@ -58,7 +58,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_pickaxe_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_pickaxe_level1"]
           }
         ]
       }

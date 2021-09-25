@@ -10,7 +10,7 @@
       "translate": "advancements.mcbbswiki.base_ore.description"
     },
     "frame": "task",
-    "background": "mcbbswiki:textures/advancements/mcbbswiki.png"
+    "background": "minecraft:textures/block/diamond_block.png"
   },
   "criteria": {
     "base_ore": {
@@ -18,7 +18,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:block_mcbbswiki_base_ore"
+            "items": ["mcbbswiki:block_mcbbswiki_base_ore"]
           }
         ]
       }

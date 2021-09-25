@@ -18,7 +18,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_small_mcbbswiki_monster_spawn_egg"
+            "items": ["mcbbswiki:item_small_mcbbswiki_monster_spawn_egg"]
           }
         ]
       }
@@ -28,7 +28,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_middle_mcbbswiki_monster_spawn_egg"
+            "items": ["mcbbswiki:item_middle_mcbbswiki_monster_spawn_egg"]
           }
         ]
       }
@@ -38,7 +38,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_large_mcbbswiki_monster_spawn_egg"
+            "items": ["mcbbswiki:item_large_mcbbswiki_monster_spawn_egg"]
           }
         ]
       }

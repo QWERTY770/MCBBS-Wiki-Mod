@@ -18,7 +18,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_helmet_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_helmet_level1"]
           }
         ]
       }
@@ -28,7 +28,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_chestplate_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_chestplate_level1"]
           }
         ]
       }
@@ -38,7 +38,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_leggings_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_leggings_level1"]
           }
         ]
       }
@@ -48,7 +48,7 @@
       "conditions": {
         "items": [
           {
-            "item": "mcbbswiki:item_mcbbswiki_boots_level1"
+            "items": ["mcbbswiki:item_mcbbswiki_boots_level1"]
           }
         ]
       }
