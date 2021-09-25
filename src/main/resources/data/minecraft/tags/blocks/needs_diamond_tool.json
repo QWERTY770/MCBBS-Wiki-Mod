@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mcbbswiki:block_mcbbswiki_base_ore",
+    "mcbbswiki:block_mcbbswiki",
+    "mcbbswiki:block_mcbbswiki_lucky_block"
+  ]
+}

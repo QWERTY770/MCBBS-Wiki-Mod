@@ -30,7 +30,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:item_mysterious_ingot",
+          "name": "mcbbswiki:item_mysterious_ingot",
           "conditions": [
             {
               "condition": "minecraft:random_chance_with_looting",
@@ -61,8 +61,8 @@
     },
     {
       "rolls": {
-        "min": 5,
-        "max": 7
+        "min": 3,
+        "max": 5
       },
       "entries": [
         {

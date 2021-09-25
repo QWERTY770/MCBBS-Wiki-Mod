@@ -18,6 +18,6 @@ public class SmallMcbbsWikiMonsterRender extends MobRenderer<SmallMcbbsWikiMonst
     @Override
     @Nonnull
     public ResourceLocation getTextureLocation(@Nonnull SmallMcbbsWikiMonsterEntity entity) {
-        return McbbsWiki.locate("textures/entity/small_mcbbswiki_monster.png");
+        return McbbsWiki.locate("textures/entity/small_mcbbswiki_monster/small_mcbbswiki_monster.png");
     }
 }

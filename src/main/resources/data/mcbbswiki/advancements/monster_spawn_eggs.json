@@ -44,6 +44,11 @@
       }
     }
   },
+  "requirements": [
+    ["egg_1"],
+    ["egg_2"],
+    ["egg_3"]
+  ],
   "rewards": {
     "recipes": [
       "block_mcbbswiki_lucky_block"

@@ -46,9 +46,10 @@ public class CustomSpawnEggItem extends SpawnEggItem {
      * but supplier based ones won't have had their EntityTypes created yet.
      */
     public static void initUnaddedEggs() {
-        final Map<EntityType<?>, SpawnEggItem> EGGS = ObfuscationReflectionHelper.getPrivateValue(SpawnEggItem.class, null, "field_195987_b");
+        final Map<EntityType<?>, SpawnEggItem> EGGS = ObfuscationReflectionHelper.getPrivateValue(SpawnEggItem.class, null, "BY_ID");
+        // access SpawnEgItem.BY_ID
         DefaultDispenseItemBehavior defaultDispenseItemBehavior = new DefaultDispenseItemBehavior() {
-            public ItemStack dispenseStack(BlockSource source, ItemStack stack) {
+            public ItemStack execute(BlockSource source, ItemStack stack) {
                 Direction direction = source.getBlockState().getValue(DispenserBlock.FACING);
                 EntityType<?> entitytype = ((SpawnEggItem) stack.getItem()).getType(stack.getTag());
                 entitytype.spawn(source.getLevel(), stack, null, source.getPos().offset(direction.getNormal()), MobSpawnType.DISPENSER, direction != Direction.UP, false);

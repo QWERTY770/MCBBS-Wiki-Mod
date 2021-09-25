@@ -10,7 +10,7 @@
       "translate": "advancements.mcbbswiki.base_ore.description"
     },
     "frame": "task",
-    "background": "mcbbswiki:mcbbswiki.png"
+    "background": "mcbbswiki:textures/advancements/mcbbswiki.png"
   },
   "criteria": {
     "base_ore": {
@@ -24,6 +24,9 @@
       }
     }
   },
+  "requirements": [
+    ["base_ore"]
+  ],
   "rewards": {
     "recipes": [
       "mcbbswiki:item_mcbbswiki_ingot",

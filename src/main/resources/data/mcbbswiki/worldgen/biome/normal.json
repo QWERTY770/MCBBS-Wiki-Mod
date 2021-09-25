@@ -1,24 +1,35 @@
 {
-  "precipitation": "rain",
-  "category": "extreme_hills",
+  "surface_builder": "minecraft:grass",
   "depth": -0.5,
   "scale": 1.3,
   "temperature": 0.7,
-  "temperature_modifier": "none",
   "downfall": 0.3,
+  "precipitation": "rain",
+  "temperature_modifier": "none",
+  "category": "extreme_hills",
+  "player_spawn_friendly": false,
+  "creature_spawn_probability": 0.7,
   "effects": {
-    "sky_color": 65535,
+    "sky_color": 7907327,
     "fog_color": 12638463,
     "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_fog_color": 329011,
+    "grass_color_modifier": "none",
+    "ambient_sound": "ambient.cave",
+    "mood_sound": {
+      "sound": "ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    }
   },
-  "surface_builder": "minecraft:default",
-  "carvers": {
-    "air": ["minecraft:cave"],
-    "liquid": ["minecraft_underwater_cave"]
-  },
+  "starts": [
+    "minecraft:mineshaft",
+    "minecraft:ruined_portal",
+    "minecraft:stronghold"
+  ],
   "spawners": {
-    "creature": [
+    "monster": [
       {
         "type": "mcbbswiki:entity_small_mcbbswiki_monster",
         "weight": 10,
@@ -39,6 +50,27 @@
       }
     ]
   },
-  "player_spawn_friendly": false,
-  "creature_spawn_friendly": 0.7,
+  "spawn_costs": {
+    "mcbbswiki:entity_small_mcbbswiki_monster": {
+      "energy_budget": 0.12,
+      "charge": 1
+    },
+    "mcbbswiki:entity_middle_mcbbswiki_monster": {
+      "energy_budget": 0.1,
+      "charge": 1.5
+    },
+    "mcbbswiki:entity_large_mcbbswiki_monster": {
+      "energy_budget": 0.08,
+      "charge": 2.3
+    }
+  },
+  "carvers": {
+    "air": [
+      "minecraft:cave"
+    ],
+    "liquid": [
+      "minecraft:underwater_cave"
+    ]
+  },
+  "features": []
 }

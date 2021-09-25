@@ -64,6 +64,13 @@
       }
     }
   },
+  "requirements": [
+    ["tools_level1_1"],
+    ["tools_level1_2"],
+    ["tools_level1_3"],
+    ["tools_level1_4"],
+    ["tools_level1_5"]
+  ],
   "rewards": {
     "loot": [
       "mcbbswiki:advancements/tools_level1"

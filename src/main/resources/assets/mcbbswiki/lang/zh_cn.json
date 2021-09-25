@@ -20,6 +20,8 @@
 
   "block.mcbbswiki.block_mcbbswiki_base_ore": "MCBBS Wiki 基础矿",
   "item.mcbbswiki.item_mcbbswiki_ingot": "MCBBS Wiki 锭",
+  "item.mcbbswiki.item_mysterious_ingot": "神秘锭",
+  "item.mcbbswiki.item_mysterious_ingot_piece": "神秘锭（碎片）",
   "item.mcbbswiki.item_transporter": "MCBBS Wiki 传送器",
   "block.mcbbswiki.block_mcbbswiki": "MCBBS Wiki 方块",
   "block.mcbbswiki.block_mcbbswiki_lucky_block": "MCBBS Wiki 幸运方块",

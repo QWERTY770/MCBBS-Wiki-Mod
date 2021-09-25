@@ -21,6 +21,6 @@ public class MiddleMcbbsWikiMonsterRender extends MobRenderer<MiddleMcbbsWikiMon
     @Nonnull
     @ParametersAreNonnullByDefault
     public ResourceLocation getTextureLocation(MiddleMcbbsWikiMonsterEntity entity) {
-        return McbbsWiki.locate("textures/entity/middle_mcbbswiki_monster.png");
+        return McbbsWiki.locate("textures/entity/middle_mcbbswiki_monster/middle_mcbbswiki_monster.png");
     }
 }

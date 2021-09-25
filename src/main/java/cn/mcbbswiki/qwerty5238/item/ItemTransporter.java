@@ -87,7 +87,7 @@ public class ItemTransporter extends Item {
                     return InteractionResult.SUCCESS;
                 }
             }
-            else if (playerEntity.level.dimension().location().toString().equals("mcbbswiki:mcbbswiki_normal_dimension")){
+            else if (playerEntity.level.dimension().location().toString().equals("mcbbswiki:normal_dimension")){
                 if(playerEntity instanceof ServerPlayer){
                     ((ServerPlayer) playerEntity).teleportTo(GetWorld.getWorldFromServer(server, "minecraft:overworld"), t.x, t.y, t.z, 1, 1);
                     int posX = (int)playerEntity.getX();

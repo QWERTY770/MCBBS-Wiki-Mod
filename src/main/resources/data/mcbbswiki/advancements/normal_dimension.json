@@ -20,6 +20,9 @@
       }
     }
   },
+  "requirements": [
+    ["normal_dimension"]
+  ],
   "rewards": {
     "loot": [
       "mcbbswiki:advancements/tools_level1"

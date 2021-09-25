@@ -12,9 +12,9 @@ import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class RayOfSunshineRender extends MobRenderer<RayOfSunshineEntity, RayOfSunshineModel> {
-    private static final ResourceLocation DEFAULT_TEXTURES = McbbsWiki.locate("textures/entity/boss/ray_of_sunshine_default.png");
-    private static final ResourceLocation FIREBALL_TEXTURES = McbbsWiki.locate("textures/entity/boss/ray_of_sunshine_fireball.png");
-    private static final ResourceLocation FLUID_TEXTURES = McbbsWiki.locate("textures/entity/boss/ray_of_sunshine_fluid.png");
+    private static final ResourceLocation DEFAULT_TEXTURES = McbbsWiki.locate("textures/entity/ray_of_sunshine/ray_of_sunshine_default.png");
+    private static final ResourceLocation FIREBALL_TEXTURES = McbbsWiki.locate("textures/entity/ray_of_sunshine/ray_of_sunshine_fireball.png");
+    private static final ResourceLocation FLUID_TEXTURES = McbbsWiki.locate("textures/entity/ray_of_sunshine/ray_of_sunshine_fluid.png");
 
     public RayOfSunshineRender(EntityRendererProvider.Context context) {
         super(context, new RayOfSunshineModel(context.bakeLayer(ModelLayers.RAY_OF_SUNSHINE)), 3F);
